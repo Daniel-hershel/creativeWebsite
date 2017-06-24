@@ -1,0 +1,403 @@
+/*SETUP*/
+
+html {
+box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+body{
+
+background-color: rgba(68, 68, 68, .05);
+font-family: 'Oswald';
+color:#444;
+font-size: 2.1vw;
+width: 95%;
+margin:auto;
+}
+@media (max-width: 599px) {
+body {
+// background: purple;
+font-size: 3.5vw;
+}
+}
+
+@media (min-width: 900px) {
+body{
+// font-size: 1.5vw; 
+}
+}
+
+/*CONTAINER FOR EVERYTHING*/
+.animsition{
+  width: 100%;
+  margin: auto;
+  // margin-left: auto;
+// margin-right: auto;
+// background-color: rgba(68, 68, 68, .05);
+
+}
+
+
+
+#app{
+// background-color: rgba(68, 68, 68, .05);
+// background-color: #444;
+width : 90%;
+/*max-width : 50em;*/
+
+margin-left: auto;
+margin-right: auto;
+height: 90%;
+margin-bottom: 5vh;
+
+// border: solid 1px #84FFA6;
+}
+
+@media (min-width: 900px) {
+#app{
+  width: 80%;
+
+}
+}
+
+@media (min-width: 1600px) {
+#app{
+  width: 70%;
+
+}
+}
+
+/*END SETUP*/
+
+/*  LOGO*/
+
+.logo {
+color: #444;
+   // border: solid 1px #6300FF; 
+position: relative;
+font-size: 90%;
+height: 7vh;
+top: 3em;
+}
+#who {
+/*  border: solid 1px #EE19F8; */
+font-size: 120%;
+font-weight: 800;
+position: absolute;
+height: 3em;
+padding: 0;
+margin: 0;
+top: 0;
+left: 0em;
+line-height: 0em;
+/*   font-size: 115%; */
+}
+#what {
+/*  border: solid 1px #FF7800; */
+position: absolute;
+height: 3em;
+top: 1em;
+left: 0em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+}
+
+#whatElse {
+/*  border: solid 1px #FF7800; */
+position: absolute;
+height: 3em;
+top: 1.8em;
+left: 0em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+}
+
+#logoAbout {
+position: absolute;
+height: 3em;
+top: 4.9em;
+// left: 3.7vh;
+left: 1.3em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+
+}
+
+#logoAbout a {
+  color: #444;
+font-weight: 200;
+font-size: 75%;
+text-decoration: none;
+
+}
+
+
+#about {
+
+}
+#about:hover{
+color: #70171A;
+}
+
+
+
+h2{
+font-weight: 200;
+// font-size: 100%;
+line-height: .001em;
+}
+h1{
+// font-size: 100%;
+line-height: 0em;
+font-weight: 500;
+/*width: 80%;*/
+}
+
+/* END  LOGO*/
+
+
+
+/*MENU*/
+
+.menu{
+/*border: solid 1px #FF7800;*/
+}
+.innerMenu{
+/*border: solid 1px #EE19F8;*/
+margin: auto;
+width: 90%;
+}
+
+
+a{
+
+}
+a:hover{
+color: #70171A;
+}
+/*a:link { color: #444; }*/
+/*Unvisited link.*/
+/*a:visited { color: #444; }*/
+/*a:focus { color: #444; }*/
+/*The user clicks on animsition-link link.*/
+/*a:active {  color: #444;}*/
+ul {
+list-style-type: none;
+margin-top: 5%;
+padding: 0;
+padding-top: 0em;
+overflow: hidden;
+/*background-color: #fcfcfc;*/
+}
+li {
+width: 100%;
+margin: auto;
+margin-bottom:1.5em;
+height: 25vh;
+// border: solid 1px #FF4274;
+
+}
+
+@media (min-width: 1200px) {
+li {
+height: 20vh;
+
+
+}
+}
+li a {
+display: block;
+color: #444;
+font-weight: 600;
+/*color: #1A4759;*/
+text-align: center;
+font-size: 150%;
+width: 100%;
+margin: auto;
+padding-top: 3em ;
+padding-bottom: 3em;
+// margin: 2em;
+text-decoration: none;
+line-height: .9em;
+}
+
+// @media (min-width: 1100px) {
+// li a{
+// font-size: 130%;
+// }
+// }
+
+@media (min-width: 1600px) {
+li a{
+font-size: 135%;
+
+}
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+color: #70171A;
+/*background-color: #111;*/
+}
+
+
+/*END MENU*/
+
+
+
+/*SUB SECTION TITLES*/
+
+/*li names*/
+
+#interact{
+// height: 90%;
+}
+
+#poetry{
+// text-align: center;
+// padding-top:  1em;
+// width: 90%;
+// margin: auto;
+}
+
+#creativeCode{
+
+}
+
+
+/* li a names*/
+
+#interactA{
+  /*maybe there is no need for this and really i just want #interact a */
+}
+
+
+#poem{
+position: absolute;
+left: 20vw;
+
+}
+
+@media (min-width: 900px) {
+#poem{
+left: 30vw;
+
+}
+}
+
+#cc{
+border: solid 0px #0F3B72;
+position: relative;
+width: 90%;
+margin: auto;
+
+}
+
+
+
+/*STYLE FOR BLASTED ELEMENTS*/
+
+.poem{
+// position: absolute;
+float:left;
+// position: relative;
+// width: 80%;
+// margin: auto;
+margin-left: .9em;
+opacity: .7;
+// left: 5vw; 
+text-align: center;
+border: solid  0em #87201B;
+text-transform: uppercase;
+
+}
+
+@media (min-width: 900px) {
+.poem{
+// left: 25vw;
+
+}
+}
+
+
+.byWord{
+position: absolute;
+text-align: center;
+color: #444;
+text-transform: uppercase;
+border-radius: 50%;
+margin: -1em;
+left: 5vw;
+top: 0;
+border: solid 1.7em rgba(168, 34, 34, 1);
+border: solid 1.5em rgba(8, 103, 136, 1);
+box-shadow: 3.5em 3em 3em rgba(249, 87, 56, .8);
+box-shadow: .5em 5em 2em rgba(8, 103, 136, 1);
+box-shadow: 5em 1em 1em rgba(8, 103, 136, 1);
+// text-shadow: .5em .5em #70171A;);
+// text-shadow: .5em .5em rgba(240, 200, 8,1);
+// text-shadow: 1em 1em rgba(255, 241, 208,1);
+// text-shadow: 1em .5em  rgba(68, 188, 193, 1));
+}
+
+@media (min-width: 900px) {
+.byWord{
+left: 22vw;
+
+}
+}
+
+/*END SUBSECTION TITLES*/
+
+.innerTitle{
+margin: auto;
+width: 75%;
+margin-bottom: 0;
+margin-top: 0;
+padding: 0;
+// border: solid 1px #13716E;
+}
+.content{
+/*border: solid 1px #FF4274;*/
+}
+.innerContent{
+/*border: solid 1px #0F3B72;*/
+/*position: relative;*/
+width: 80%;
+margin: auto;
+}
+
+// .vtxt {
+//     -webkit-writing-mode: vertical-rl;
+//     writing-mode: vertical-rl;
+//     margin-bottom: 0em;
+// }
+#toolkitIcon{
+}
+
+#container{
+width: 100%;
+height: 100%;
+// position: absolute;
+height: 10vh;
+border: solid 10px #EE19F8;
+}
+
+// #myThesis{
+// text-shadow: 0em 0em #70171A;
+// }
+
+// .thesis{
+// float: left;
+
+// }

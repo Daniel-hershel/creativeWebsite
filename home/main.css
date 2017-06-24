@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+background-color: #FCFCFC;
+font-family: 'Oswald';
+ color:#444;
+font-size: 2.3vw;
+/*font-size: 2em*/
+/*height: 100vh;*/
+}
+
+h1{
+line-height: .5em;
+
+}
+
+#app{
+   width : 90%;
+    max-width : 80em;
+  margin-right: auto;
+  margin-left: auto;
+ /*border: solid 1px #84FFA6;*/
+}
+
+.menu{
+ /*border: solid 1px #FF7800;*/
+
+}
+
+.innerMenu{
+ /*border: solid 1px #EE19F8;*/
+ margin: auto;
+ width: 100%;
+
+}
+
+.title{
+// color:#385380;
+  // border: solid 1px #6300FF;
+  /*position:absolute;*/
+  // font-si ze: 80%;
+}
+
+
+.innerTitle{
+margin: auto;
+text-align: center;
+  // border: solid 1px #13716E;
+}
+
+.content{
+  // border: solid 1px #FF4274;
+
+}
+
+.innerContent{
+  // border: solid 1px #0F3B72;
+  /*position: relative;*/ 
+  width: 80%;
+  margin: auto;
+
+}
+
+
+.thing{
+  // border: solid 5px #444;
+  width: 100%;
+  margin-bottom: 10%;
+
+}
+
+.innerThing{
+  // border: solid 1px #FF4274;
+  width: 80%;
+  // max-width: 20em;
+  // min-width:  10em;
+margin: auto;
+
+
+}
+
+
+.thingTitle{
+  font-size: 2em;
+  text-align: center;
+  font-weight: 300;
+  border: solid 10px #444;
+
+  // letter-spacing: .001em;
+
+}
+
+
+a{
+font-size: 40%;
+font-family: oswald;
+font-weight: 800;
+color: #444;
+text-decoration: none;
+/*letter-spacing: -.05em;*/
+margin-bottom: 0%;
+margin-top: 0%;
+/*margin-bottom: 9%;*/
+display: inline;
+
+
+}
+
+a:hover{
+color: #A82222;
+
+}
+
+a:link { color: #444; }
+ /*Unvisited link.*/
+a:visited { color: #444; }
+
+a:focus { color: #444; }
+/*The user clicks on animsition-link link.*/
+a:active {  color: #444;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fcfcfc;
+}
+
+li {
+    float: left;
+    width: 15%;
+    margin:auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 80%;
+    padding: 9px 9px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #A82222;
+    /*background-color: #111;*/
+}
+
+.tweed{
+  background-image: url("media/tweed.png")
+}
+
+.hoffman{
+  background-image: url("media/hoffman.png")
+
+}
+
+.plaid{
+  background-image: url("media/plaid.jpg")
+
+}
+
+.seigaiha{
+  background-image: url("media/seigaiha.png")
+
+}
+.slabtexted .slabtext
+    {
+    display: -moz-inline-box;
+    display: inline-block;
+    white-space: nowrap;
+
+    }
+.slabtextinactive .slabtext
+    {
+    display: inline;
+    white-space: normal;
+    font-size: 1em !important;
+    letter-spacing: inherit !important;
+    word-spacing: inherit !important;
+    *letter-spacing: normal !important;
+    *word-spacing: normal !important;
+    }
+.slabtextdone .slabtext
+    {
+    display: block;
+    line-height: 1em;
+    }

@@ -1,0 +1,58 @@
+
+// body {
+// padding: 5%;
+//   background:#fcfcfc;
+//        color:#444;
+//        width:90%;
+//        font-family: 'Archivo Black', sans-serif;
+// top: 0;
+// }
+// .me{
+//          font-family: decorative;
+//          /*font-family: bebas;*/
+// width: 55%;
+//          opacity: .7;
+//          font-size: .9em;
+// }
+// .underConstruction {
+// color: #D01D24;
+// }
+// .instructions {
+// font-family: bebas;
+// text-align: center;
+// font-size:  36px;
+// width: 55%;
+// }
+// .categories{
+//  color: #D01D24;
+// }
+// img{
+//   // width: 85%;
+// }
+// .title {
+//   font-family: decorative;
+//   /*width:65%;*/
+// }
+// .fade{
+//   opacity: .8;
+// }
+// .slabtexted .slabtext
+//     {
+//     display: -moz-inline-box;
+//     display: inline-block;
+//     white-space: nowrap;
+//     }
+// .slabtextinactive .slabtext
+//     {
+//     display: inline;
+//     white-space: normal;
+//     font-size: 1em !important;
+//     letter-spacing: inherit !important;
+//     word-spacing: inherit !important;
+//     *letter-spacing: normal !important;
+//     *word-spacing: normal !important;
+//     }
+// .slabtextdone .slabtext
+//     {
+//     display: block;
+//     }

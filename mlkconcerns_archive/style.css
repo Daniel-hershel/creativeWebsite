@@ -1,0 +1,443 @@
+body {
+  background: #000;
+  color: #fffff8;
+  /*width:92%;*/
+            padding:20px 0;
+            margin:0 auto;
+}
+
+
+ul{
+  display:list-item;
+}
+
+.darkBack {
+background-image: url('style/backgrounds/inverse-bg.jpg');
+  color: #fffff8;
+padding-top:0;
+margin-bottom: 0px;
+
+}
+
+
+#intro{
+  /*margin: auto;*/
+  margin-bottom: 0;
+     width:55%;
+     /*// color:#D22042;
+     color:'white';
+     // color:#FFFF99;
+        // margin:0 0 0 2.5%;*/
+        padding-top: 20%;
+
+}
+
+#daQuote{
+ width:55%;
+ margin-left: auto;
+ margin-right: auto;
+ // line-height: 3em;
+}
+h1{
+/*font-family: 'Alfa Slab One', cursive;*/
+    font-family:"Oswald", "Arial Black", Gadget, sans-serif;
+       font-weight:700;
+            text-transform:uppercase;
+            line-height:1;
+
+            padding:20px;
+}
+
+.lightBack {
+
+background-image: url('style/backgrounds/light_grey.png');
+padding-top:0;
+color: #081422;
+margin-bottom: 0px;
+
+}
+
+.darkBackAlt{
+  background-image: url('style/backgrounds/navy_blue.png');
+ /*background-image: url('style/backgrounds/inverse-bg.jpg');*/
+margin-bottom: 0px;
+margin-top: 0px;
+
+}
+
+.darkBackChalk{
+  /*background-image: url('style/backgrounds/stardust.jpg');*/
+  background-image: url('style/backgrounds/stardust.png');
+  color: 'white';
+}
+
+.headerBack{
+background-image: url('http://www.danielsilber-baker.com/myHostedContent/contentImages/mlk.jpg');
+min-height: 300px;
+margin-bottom: 0px;
+
+}
+
+.stage{
+background-image: url('style/backgrounds/congruent_pentagon.png');
+color: '#000';
+margin-bottom: 0px;
+
+}
+
+.cardHolder{
+  padding-top: 50px;
+}
+
+#stageOne{
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#stageTwo{
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#stageThree{
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#canvasTwo{
+font-family: 'Alfa Slab One', cursive;
+background-image: url('style/backgrounds/chalkboard.jpg');
+/*background-image: url('style/backgrounds/navy_blue.png');*/
+
+/*background-color: #FFE47D;*/
+color: #fafbf4;
+}
+#canvas {
+font-family: 'Alfa Slab One', cursive;
+background-color: #111625;
+color:#fafbf4;
+}
+#controls{
+  /*height: 300px;*/
+  color: #fafbf4;
+}
+
+#controlsText{
+  /*height: 300px;*/
+  color: #fafbf4;
+
+
+}
+
+.instructionsSmall {
+font-size:16px;
+}
+.instructions{
+/*font-family: 'Montserrat';*/
+font-family: 'Raleway';
+     color:#0c5331;
+     font-size: 24px;
+     width: 55%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 0px;
+     // text-align: center;
+     /*min-height: 300px;*/
+
+
+}
+
+.sikkum{
+  background-image: url('stardust.png');
+
+}
+
+/*mock cursor for inputs*/
+
+#blah {
+  position: relative;
+}
+#mock-cursor {
+  position: absolute;
+  color:  #D41F3D;
+  -webkit-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  top: 2em;
+  left: .45em;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+input:focus ~ #mock-cursor {
+  display: none;
+}
+
+@-webkit-keyframes blink {
+  0%, 49.9%, 100%   { opacity: 0; }
+  50%, 99.9% { opacity: 1; }
+}
+input[type=checkbox] + label {
+  list-style-type: none;
+border: 5px solid #D41F3D;
+border-radius: 8px;
+
+padding-top: 100px;
+color: #D41F3D;
+font-style: italic;
+font-size: 24px;
+font-family: 'Alfa Slab One';
+/*background: #0C294C;*/
+display: block;
+height: 300px;
+}
+input[type="checkbox"] + label span:hover  {
+background: #729FC1;
+}
+/*styling for checkboxes when they are checked*/
+input[type=checkbox]:checked + label {
+color:white;
+font-style: normal;
+background: #D41F3D;
+}
+
+#source{
+width: 45%;
+margin: auto;
+padding: 10px;
+font-size: 18px;
+}
+
+#inputZone {
+padding-bottom: 20px;
+margin-bottom: 50px;
+border:1px solid #000000;
+}
+
+
+/*buttons*/
+.generate{
+font-family: 'Alfa Slab One', cursive;
+
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 48px;
+  display:block;
+  height: 200px;
+  margin: auto;
+  background: #fffff8;
+  color: #D41F3D;
+}
+.ghost-button {
+display: inline-block;
+width: 200px;
+padding: 8px;
+color: #fff;
+border: 1px solid #fff;
+text-align: center;
+outline: none;
+text-decoration: none;
+}
+
+.ghost-button:active {
+  background-color: #D41F3D;
+}
+.ghost-button:hover{
+background-color: #fff;
+color: #000;
+}
+.ghost-button-rounded-corners {
+display: inline-block;
+width: 200px;
+padding: 8px;
+color: #fff;
+border: 1px solid #fff;
+border-radius: 5px;
+text-align: center;
+outline: none;
+text-decoration: none;
+}
+.ghost-button-rounded-corners:hover{
+    background-color: #D41F3D;
+}
+.ghost-button-rounded-corners:active {
+background-color: #fff;
+color: #000;
+}
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+transition: all .3s ease;
+}
+.slide-fade-leave-active {
+transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-active {
+transform: translateX(10px);
+opacity: 0;
+}
+
+#sources{
+font-size:  .7rem;
+  margin-left: 18rem;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ /*// background: url('www.danielsilber-baker.com/standingRock/stillFootage.png') no-repeat;
+  // background-size: cover;*/
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+.bodyPart {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 3rem;
+  width: 35%;
+  margin: .01rem;
+  float: right;
+  font-size: 1.3rem;
+}
+
+.bodyPartLeft {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 3rem;
+  width: 45%;
+  margin: .01rem;
+  float: left;
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+
+p {
+
+  font-size: 1.1rem;
+}
+
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background;
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+
+/*music player*/
+.toggle {
+  padding: 20px;
+  width: 170px;
+  font-family: roboto;
+  background: #D22042;
+  border: none;
+  font-size: 3em;
+  color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+.music {
+  width: 20vw;
+  display: flex;
+  margin: 10vh auto;
+}
+.music .bar {
+  width: calc(20vw / 3);
+  background: #D22042;
+  /*background: #ff5252;*/
+  height: 15vw;
+  margin-left: .5vw;
+}
+.music .bar.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.music .barOne {
+  height: 10vw;
+  margin-top: 5vw;
+  animation: barOne 0.75s linear infinite;
+}
+.music .barTwo {
+  height: 18vw;
+  margin-top: -3vw;
+  animation: barTwo 1s linear infinite;
+}
+.music .barThree {
+  height: 14vw;
+  margin-top: 1vw;
+  animation: barThree 0.75s linear infinite;
+}
+
+@keyframes barOne {
+  0% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+  50% {
+    height: 7.5vw;
+    margin-top: 7.5vw;
+  }
+  100% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+}
+@keyframes barTwo {
+  0% {
+    height: 18vw;
+    margin-top: -3vw;
+  }
+  50% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+  100% {
+    height: 18vw;
+    margin-top: -3vw;
+  }
+}
+@keyframes barThree {
+  0% {
+    height: 14vw;
+    margin-top: 1vw;
+  }
+  50% {
+    height: 20vw;
+    margin-top: -5vw;
+  }
+  100% {
+    height: 14vw;
+    margin-top: 1vw;
+  }
+}

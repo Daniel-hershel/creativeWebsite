@@ -1,0 +1,607 @@
+@font-face {
+font-family: 'archivo';
+src:  url('fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+url('fonts/ArchivoNarrow-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'archivoBold';
+src:  url('fonts/ArchivoNarrow-Bold.woff2') format('woff2'),
+url('fonts/ArchivoNarrow-Bold.woff') format('woff');
+}
+html {
+box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+body{
+background-color: rgba(68, 68, 68, .05);
+// background-color: #FAFAFA;
+font-family: 'Oswald';
+color:#444;
+font-size: 2.1vw;
+width: 90%;
+margin:auto;
+}
+@media (max-width: 599px) {
+body {
+// background: purple;
+font-size: 3.5vw;
+}
+}
+@media (min-width: 1400px) {
+body{
+font-size: 1.5vw;
+}
+}
+
+
+h1{
+line-height:.9em;
+margin: 0;
+}
+
+/*CONTAINER FOR EVERYTHING*/
+.animsition{
+  margin: auto;
+// border: solid 1px #EE19F8;
+// position: relative;
+}
+@media (min-width: 1600px) {
+.animsition{
+margin-left: 10%;
+margin-right: 10%;
+}
+}
+
+/*container for app w/o menu */
+
+#app{
+width : 90%;
+margin: auto;
+position: relative;
+// border: solid 1px #84FFA6;
+}
+
+/*menu */
+
+.menu{
+width: 100%;
+margin: auto;
+// border: solid 1px #EE19F8;
+height: 5vh;
+margin-top: 2vh;
+margin-bottom: 2vh;
+}
+.innerMenu{
+// border: solid 1px #444;
+margin: auto;
+width: 100%;
+}
+
+.menuLink{
+}
+a{
+// font-size: 120%;
+text-decoration: none;
+color: #444;
+}
+a:hover{
+color: #70171A ;
+}
+a:link { color: #444; }
+/*Unvisited link.*/
+a:visited { color: #444; }
+a:focus { color: #444; }
+/*The user clicks on animsition-link link.*/
+a:active {  color: #444;}
+.subLink{
+// color: #FAFAFA;
+}
+
+/*menu items*/
+.subLink a{
+color: rgba(68, 68, 68, 1);
+font-family: 'Oswald';
+font-weight: 800;
+text-decoration: none;
+float: left;
+width: 17%;
+display: block;
+margin:auto;
+margin: .1em;
+border-top: solid .1em rgba(68, 68, 68, .5);
+line-height: 1em;
+}
+
+
+ul {
+list-style-type: none;
+position: relative;
+font-size: 120%;
+overflow: hidden;
+width: 100%;
+margin: 0;
+}
+@media (max-width: 599px) {
+ul {
+// background: purple;
+font-size: 85%;
+}
+}
+li {
+// background-color: #444;
+// border: solid .01em #444;
+}
+li a {
+text-decoration: none;
+// color: #444;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+color: #70171A;
+/*background-color: #111;*/
+}
+
+
+
+/* TITLE */
+.title{
+width: 100%;
+margin: auto;
+margin-bottom: 2em;
+height: 15vh;
+// border: solid 5px #6300FF;
+position:relative;
+}
+@media (max-width: 599px) {
+.innerTitle {
+// height: 12vh;
+}
+}
+.innerTitle{
+margin: auto;
+width: 100%;
+font-size: 110%;
+font-weight: 800;
+position: absolute;
+height: 40%;
+top: 0;
+line-height: .9em;
+text-align: center;
+// margin-bottom: .1em;
+// border: solid 1px #13716E;
+}
+
+.titleDescription{
+position: absolute;
+height: 30%;
+top: 40%;
+font-family: 'archivo';
+font-size: 100%;
+line-height: 1em;
+width: 80%;
+margin-left: 9%;
+margin-right: 5%;
+text-align: center;
+// border: solid 1px #FF4274;
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.titleDescription{
+// font-size: 4vw;
+font-size: 120%;
+width: 90%;
+// padding-bottom: 3em;
+}
+}
+
+
+/* THING */
+
+.thing{
+// border: solid 5px #444;
+width: 100%;
+position: relative;
+height: 45vh;
+// display:inline-block;
+margin-bottom: 3em;
+overflow: hidden;
+}
+
+@media (max-width: 599px) {
+.thing {
+// background: purple;
+margin-bottom: 2em;
+height: 40vh;
+}
+}
+@media (min-width: 1000px) {
+.thing {
+// background: purple;
+margin-bottom: 3em;
+height: 50vh;
+}
+}
+
+
+.thingTitle{
+width: 100%;
+font-size: 160%;
+text-align: center;
+font-weight: 800;
+// border: solid .1em #444;
+color:#444;
+text-transform: uppercase;
+// letter-spacing: .001em;
+}
+.thingTitle:hover{
+color: #70171A ;
+}
+.thingDescription{
+font-family: 'archivo';
+font-size: 85%;
+text-align: center;
+width:65%;
+margin: auto;
+opacity: .8;
+margin-bottom: .5em;
+line-height: 1em;
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.thingDescription{
+// font-size: 4vw;
+font-size: 120%;
+width: 90%;
+}
+}
+
+iframe{
+
+padding-bottom: 6.25%; /* 16:9 */
+width: 70%;
+margin-top: 3%;
+margin-left:15%;
+margin-bottom:9%;
+margin-right:9%;
+height: 30vh;
+}
+@media (max-width: 599px) {
+iframe {
+// background: purple;
+height: 20vh;
+}
+}
+.frameHolder{
+position: relative;
+width: 80%;
+// height: 0;
+// border: solid .1em #1F75C7;
+margin: auto;
+}
+.frameHolder iframe {
+
+width: 100%;
+}
+
+
+
+#protoImg{
+padding-bottom: 6.25%; /* 16:9 */
+width: 100%;
+margin-top: 3%;
+margin-left:15%;
+margin-bottom:9%;
+margin-right:9%;
+// height: 40vh;
+}
+.innerThingTopQuarter{
+position: absolute;
+top: 0;
+height: 38%;
+width: 100%;
+overflow: hidden;
+// border: solid 1px #E31F1B;
+// font-size: 100%;
+// background: rgba(68, 68, 68, .4);
+// background: #FAFAFA;
+}
+.innerThingBottomThreeQuarter{
+position: absolute;
+top: 38%;
+height: 62%;
+// border: solid 1px #FFE47D;
+width: 80%;
+// margin-top:3%;
+// margin-left:9%;
+// margin-bottom:9%;
+// margin-right:9%;
+}
+.innerThingLeft{
+// display: inline-block;
+position: absolute;
+// text-align: left;
+width: 60%;
+font-size: 85%;
+// float:left;
+// border: solid 1px #FFE47D;
+}
+.innerThingRight{
+// border: solid 1px #E31F1B;
+position: absolute;
+// float:right;
+   // background-image: url("media/projects/mlkThin.png");
+width: 40%;
+left: 60%;
+// display: inline-block;
+}
+
+.thingLink{
+  height:auto;
+// border: solid 1em #239B6F;
+
+}
+
+.thingLink:hover{
+border: solid .3em #70171A;
+
+}
+.thingFact{
+// color: #70171A;
+float: left;
+position: relative;
+// margin: auto;
+margin: 1em;
+width: 5.5em;
+height: 2.5em;
+// background-color: #444;
+// border: solid .1em #FAFAFA;
+}
+.innerFact{
+position: absolute;
+color: #444;
+// color: #FAFAFA;
+left: 60%;
+font-size: 70%;
+// background-color: #70171A;
+padding: auto;
+// padding-top: .5em;
+// padding-bottom: .5em;
+// padding: .5em;
+// font-family: 'archivoBold';
+// width: 78%;
+width:5em;
+height: 2em;
+font-weight: 200;
+// text-align: center;
+
+text-transform: uppercase;
+}
+.innerIcon{
+height: 1.8em;
+border-left: solid .05em #444;
+
+width: 35%;
+
+position: absolute;
+
+color: #fcfcfc;
+left:0;
+// background-color: rgba(168, 34, 34, .6);
+// border: solid 1px #FF4274;
+}
+.iconImg {
+width: 90%;
+height: 90%;
+// height: 3em;
+// position:absolute;
+margin: .2em;
+}
+
+
+/* ABOUT PAGE STYLES */
+
+#aboutHolder{
+
+position:relative;
+height: 90vh;
+}
+
+#aboutMenu{
+  color: #FAFAFA;
+}
+
+#aboutTitle{
+position: absolute;
+height: 5vh;
+  background-color: rgba(68, 68, 68, .3);
+  text-shadow: .05em .05em #444;
+
+
+}
+
+#myName{
+color: #FAFAFA;
+  text-shadow: .05em .05em #444;
+font-size: 170%;
+position: absolute;
+height: 5vh;
+top: 5vh;
+  background-color: rgba(68, 68, 68, .3);
+  // background-color: rgba(252, 247, 247, .3);
+
+// border: solid 1px #239B6F;
+
+}
+
+#aboutText{
+font-size: 100%;
+  text-align: left;
+  width: 100%;
+font-family: 'archivo';
+position: absolute;
+top: 80%;
+// height: 10vh;
+  // background-color: rgba(252, 247, 247, .3);
+// border: solid 1px #FF4274;
+}
+
+
+
+#contact{
+
+height: 25vh;
+position: absolute;
+text-align: center;
+font-size: 120%;
+top: 25%;
+width: 100%;
+margin-left: 0em;
+background-color: rgba(68, 68, 68, .5);
+
+// border: solid 1px #23C4AF;
+
+}
+
+#contact a{
+  color: #FAFAFA;
+    text-decoration: underline;
+
+}
+/* END ABOUT PAGE STYLES */
+
+
+#interactTitle{
+height: 6vh;
+}
+
+#cocTitle{
+text-align: left;
+line-height: 1em;
+width: 90%;
+}
+
+
+#genTitle{
+text-align: left;
+width: 90%;
+
+}
+#mlkBlurb{
+  text-align: left;
+  width: 100%;
+// background-color: rgba(168, 34, 34, .6);
+
+
+}
+
+
+#genBlurb{
+  text-align: left;
+  width: 100%;
+  // position: absolute;
+  // left:0;
+// background-color: rgba(168, 34, 34, .6);
+
+}
+
+#interAct{
+  // font-size: 90%;
+  margin-left: 0em;
+}
+
+#poetryTitle{
+
+  height: 8vh;
+}
+.thingPic{
+
+// width: 30em;
+}
+
+.context{
+border: solid 1px #FF4274;
+width: 90%;
+margin:auto;
+}
+.innerContext{
+// border: solid 1px #0F3B72;
+width: 90%;
+margin:auto;
+line-height: .9em;
+font-size: 60%;
+font-weight: 200;
+font-family: 'archivo';
+text-align: center;
+}
+// #mlkLink{
+// display: inline-block;
+// height: 20%;
+// }
+.regLink{
+font-size: 100%;
+}
+
+p{
+font-family: 'archivo';
+}
+.profilePic{
+width: 100%;
+}
+
+/* this little magic code helps images fit the div space they are in*/
+img {
+
+    max-width: 100%; 
+display:block; 
+height: auto;
+}
+
+// .content{
+// // border: solid 1px #FF4274;
+// width: 100%;
+// }
+// .innerContent{
+// // border: solid 1px #0F3B72;
+// position: relative;
+// width: 90%;
+// margin: auto;
+// margin-bottom: 5vh;
+// // padding: 1vh;
+// }.innerThing{
+// width: 100%;
+// margin: auto;
+// margin-top: .5vh;
+// position: relative;
+// }
+
+// .mediaDescription{
+// // border: solid 1px #E31F1B;
+// font-size: 100%;
+// // font-size: 2.5vw;
+// line-height: 1em;
+// // margin: 0;
+// width: 60%;
+// font-weight: 200;
+// font-family: 'archivo';
+// margin-top: 0;
+// opacity: .7;
+// }
+// .mediaLeft{
+// position: absolute;
+// left: 0;
+// width: 70%;
+// }
+// .mediaRIght{
+// position: absolute;
+// left: 30%;
+// width: 70%;
+// margin-left: 0;
+// }

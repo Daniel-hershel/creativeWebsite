@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- <link rel="shortcut icon" href="style/images/favicon.png"> -->
+<title>MLK InteractivITY</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="libraries/nexusUI.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script language="javascript" type="text/javascript" src="fabric.js"></script>
+<!-- load interface js -->
+<script language="javascript" type="text/javascript" src="interface.min.js"></script>
+<!-- <script src =  "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<!-- <script src = "jquery.mobile-1.4.5.js"></script> -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<!--Import Google Icon Font-->
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!-- //fabric  code -->
+<!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
+<!-- load all the google fonts -->
+ <link href="slabtext.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style.css">
+<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> -->
+<!-- <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script> -->
+<!-- <script src="jquery.ui.touch-punch.min.js"></script> -->
+<style>
+.slabtexted .slabtext
+    {
+    display: -moz-inline-box;
+    display: inline-block;
+    white-space: nowrap;
+    }
+.slabtextinactive .slabtext
+    {
+    display: inline;
+    white-space: normal;
+    font-size: 1em !important;
+    letter-spacing: inherit !important;
+    word-spacing: inherit !important;
+    *letter-spacing: normal !important;
+    *word-spacing: normal !important;
+    }
+.slabtextdone .slabtext
+    {
+    display: block;
+    }
+        .slabtext-linesize-0
+        {
+        line-height:.9;
+        }
+</style>
+</head>
+<body>
+<div id = "app">
+
+<!-- Intro -->
+<div class = "content headerBack">
+<div class = "innerTitle">
+<h1>Constellation of Concern </h1>
+<h1>An InteractivITY with  Dr. Martin Luther King Jr's Speech </h1>
+<h1>'Where Do We Go From Here'</h1>
+</div>
+</div>
+
+<!-- explore -->
+<div class = "content stage">
+      <i class="large material-icons">surround_sound</i>
+<div class = "title">
+<h1>Explore</h1>
+</div>
+</div>
+<div class = "content ">
+<div class = "innerContent centerAllign">
+  <p>On August 16th, 1967 Dr. Martin Luther King Jr. gave a speech at the 11th annual Southern Christian Leadership Conference (SCLC) Convention in Atlanta, Georgia titled: </p>
+<p> 'Where Do We Go From Here? Community or Chaos'</p>
+<div class = "left">
+<audio src="mlkClip.mp3"></audio>
+<button class="toggle">Play</button>
+<div class="music">
+  <div class="barOne bar"></div>
+  <div class="barTwo bar"></div>
+  <div class="barThree bar"></div>
+</div>
+</div>
+<div class = "right">
+<h3 id = "daQuote">"And the other thing is,  I'm concerned about a better world.  I'm concerned about justice;  I'm concerned about brotherhood; I'm concerned about truth. (That’s right)." 
+</h3>
+</div>
+</div>
+</div>
+<div class = "content stage">
+      <i class="large material-icons">speaker_notes</i>
+<div class = "title">
+<h1 style = "color: #000">Engage</h1>
+</div>
+</div>
+<div class = "content">
+<div class = "innerContent">
+<!-- <img id = "stageTwo" src = "icons/svg/network.svg" height = "150"> -->
+<div class = " instructions">Using the Magic Canvas below, create your own visual representation of MLK's conerns. <br/><br/>  Some of the controls you can use on Magic Canvas:
+  <ul>
+    <li>
+       Select an object to make it active.
+    </li>
+    <li>
+  Hold and drag to move object
+    </li>
+    <li>
+      Drag from corners to change size
+    </li>
+    <li>
+      Rotate using handle on very top of objects
+    </li>
+    <li>
+      Drag across canvas to select, group, and manipulate multiple objects
+    </li>
+  </ul>
+  <p>
+   Try exploring different connections and ways you can form meaning using all the manipulation tools available.
+ </p>
+ </div>
+</div>
+<canvas id="canvasTwo" class = "theCanvas" width="" height="550" style="border:1px solid #000000"></canvas>
+</div>
+<div id="app-4">
+<div class = "content stage">
+      <i class="large material-icons">call_merge</i>
+<div class = "title">
+<h1 style = "color: #000">Re-Create</h1>
+</div>
+</div>
+
+
+<div id = "recreate" class="content">
+
+
+<div class = "instructions">Now we are going to build our own constellations! You will end up with a Magic Canvas' like the one above with MLK's constellation of concern,  except you will get to decide what words, and colors are used for your canvas.
+ </div>
+ 
+
+<div class = "left">
+<div class = "instructionTitle">  Select as many of MLK's concerns as you want for your canvas</div>
+<p v-for="todo in todos" class="slideTwo ">
+<input type="checkbox"  :id="todo.text" :value="todo.text" v-model="checkedNames" style="opacity:0">
+<label :for="todo.text">  {{ todo.text }}</label>
+</p>
+</div>
+
+<div class = "right">
+
+ <div class = "instructionTitle"> Write in your own 'concerns'.</div>
+<div class = "innerContent" style = "height:40%">
+
+<p>{{ message }}</p>
+<input id="userConcernOne" v-model="message" :value="message">
+</div>
+
+<div class = "innerContent">  
+<button class="ghost-button-rounded-corners" v-on:click="addConcern">Add</button>
+</div>
+
+<div class = "innerContent">  
+  <h3 style = "text-align: center;">
+   {{ checkedNames }}
+ </h3>
+ </div>
+
+
+</div>
+
+ 
+<a  class = "generate" onclick="create()" href="#canvas">  Generate Canvas </a>
+
+ </div>
+
+
+
+
+
+<div class = "content">
+<div class = "top">
+
+<!-- create the fabric canvas -->
+<canvas id="canvas" class="theCanvas" width="" height="400" style="border:1px solid #000000"></canvas>
+</div>
+<div class = "bottom">
+<div class = "innerContent">
+  <div class="floatLeft">
+
+  <h3 style = "color:#444"> BACKGROUND COLOR MAKER </h3>
+    <!-- <canvas nx="envelope" label="filter" style="width:310px;height:150px"></canvas> -->
+    <!-- <canvas nx="string"></canvas> -->
+      <canvas nx="slider" label="Hue" style="width:250px;height:60px;"></canvas>
+      <canvas nx="slider" label="Saturation" style="width:250px;height:60px;"></canvas>
+      <canvas nx="slider" label="Lightness" style="width:250px;height:60px;"></canvas>
+<!-- <div id="controls">
+  <h1> Background  Colors</h1>
+</div> -->
+</div>
+
+
+<div class="floatLeft">
+  <h3 style = "color:#444"> TEXT COLOR MAKER </h3>
+    <!-- <canvas nx="envelope" label="filter" style="width:310px;height:1250px;"></canvas> -->
+      <canvas nx="slider" label="Hue" style="width:250px;height:60px"></canvas>
+      <canvas nx="slider" label="Saturation" style="width:250px;height:60px"></canvas>
+      <canvas nx="slider" label="Lightness" style="width:250px;height:60px"></canvas>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="content stage">
+<div class="innerContent">
+<h1>Wrapping Together and Up</h1>
+</div>
+</div>
+<div class="content" style = "color: #444">
+
+<div class="innerContent">
+<h4>After Martin Luther King states his concerns, he says "And when one is concerned about that, he can never advocate violence."</h4>
+<h2>MLK's Version</h2>
+<h4>And the other thing is, I'm concerned about a better world. I'm concerned about justice; I'm concerned about brotherhood; I'm concerned about truth. (<i>That’s right</i>) And when one is concerned about that, he can never advocate violence.</h4>
+</div>
+<div class="innerContent">
+<h2>Your Version</h2>
+<h4>Looking at your 'constellation of concern,' add one more piece to your canvas, by completing the prompt below based on your concerns.</h4>
+<h3>
+    I'm concerned about {{ checkedNames }}
+</h3>
+<h3>{{ finalThought }}</h3>
+<input v-model="finalThought">
+</div>
+<div class="innerContent">
+<p> Coding and Content by <a href = "http://www.danielsilber-baker.com"> Daniel Silber-Baker</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- app 4 -->
+<!-- app -->
+<!-- what else -->
+<!-- </div> -->
+</div>
+</div>
+<script src="libraries/p5.js"></script>
+<script src="libraries/p5.dom.js"></script>
+<script src="libraries/jquery/jquery.fittext.js"></script>
+<script src="style/js/jquery.min.js"></script>
+<script src="style/js/bootstrap.min.js"></script>
+<script src="style/js/plugins.js"></script>
+<script src="style/js/jquery.themepunch.tools.min.js"></script>
+<!-- <script src="style/js/scripts.js"></script> -->
+<script>
+  // jQuery(".innerContent").fitText(1.2, { minFontSize: '1.9vh', maxFontSize: '33vh ' });
+  // jQuery(".innerTitle").fitText(1.2, { minFontSize: '1.9vh', maxFontSize: '40vh ' });
+  // jQuery("h1").fitText(1.2, { minFontSize: '1.9vh', maxFontSize: '6vh ' });
+</script>
+   <script>
+    </script>
+<script>
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<input type="checkbox" :id="todo.text" :value="todo.text" v-model="checkedNames"><label :for="todo.text">  {{ todo.text }}</label>'
+})
+var app4 = new Vue({
+el: '#app-4',
+data: {
+todos: [
+{ text: 'Truth' },
+{ text: 'Brotherhood' },
+{ text: 'Justice' },
+{ text: 'A Better World' }
+],
+checkedNames: [],
+finalThought: 'And when one is concerned about that,',
+message: '',
+my_message: '',
+my_third_message:''
+},
+methods: {
+addConcern: function (event) {
+app4.checkedNames.push(app4.message);
+app4.message = ' '
+// var selector = $('userConcernOne')
+console.log(app4.message)
+// app4.checkedNames.push({text: app4.message});
+},
+addConcernTwo: function (event) {
+app4.checkedNames.push(app4.my_message);
+},
+addConcernThree: function (event) {
+app4.checkedNames.push(app4.my_third_message);
+}
+}
+})
+// app4.todos.push({ text: 'New item' })
+</script>
+<script>
+// create mlk canvas
+var canvasTwo =new fabric.Canvas('canvasTwo')
+//make the fabric canvas the full width of the window
+window.addEventListener('resize', resizeCanvas, false);
+function resizeCanvas() {
+// canvasTwo.setHeight(window.innerHeight);
+canvasTwo.setWidth(window.innerWidth-150);
+canvasTwo.renderAll();
+}
+// resize on init
+resizeCanvas();
+var yDown = 200;
+// setting background to image
+// canvasTwo.setBackgroundImage('style/backgrounds/navy_blue.png',canvasTwo.renderAll.bind(canvasTwo), {
+//     backgroundImageStretch: true
+// });
+fabric.Image.fromURL('http://www.danielsilber-baker.com/myHostedContent/mlkIcons/icons/lulu-bell.png', function(img) {
+// canvas.add(oImg);
+var img1 = img.scale(0.25);
+var text = new fabric.Text(app4.todos[2].text, {
+fontFamily:  'Oswald',
+fontSize:40,
+fill: '#fffff8',
+originX: 'center',
+originY: 'center',
+left: 120
+});
+canvasTwo.add(new fabric.Group([ img1, text], { left: 0, top: 100 }))
+});
+//group 2
+// <img src="style/images/icons/lulu-link.png" id="my-image2" width = "20%">
+fabric.Image.fromURL('http://www.danielsilber-baker.com/myHostedContent/mlkIcons/icons/lulu-link.png', function(img) {
+// canvas.add(oImg);
+var img2 = img.scale(0.25);
+// var img1 = img.scale(0.25).set({ left: 100, top: 100 });
+var text2= new fabric.Text(app4.todos[1].text, {
+fontFamily:  'Oswald',
+fontSize:40,
+fill: '#fffff8',
+originX: 'center',
+originY: 'center',
+left: 120
+});
+// var imgElement = document.getElementById('my-image');
+// var imgInstance = new fabric.Image(imgElement, {
+//   opacity: 0.85
+// });
+canvasTwo.add(new fabric.Group([ img2, text2], { left: 200, top: 100 }))
+});
+//group 3
+fabric.Image.fromURL('http://www.danielsilber-baker.com/myHostedContent/mlkIcons/icons/lulu-flower.png', function(img) {
+// canvas.add(oImg);
+var img3 = img.scale(0.25);
+// var img1 = img.scale(0.25).set({ left: 100, top: 100 });
+var textThree= new fabric.Text(app4.todos[3].text, {
+fontFamily:  'Oswald',
+fontSize:40,
+fill: '#fffff8',
+originX: 'center',
+originY: 'center',
+left: 120
+});
+// var imgElement = document.getElementById('my-image');
+// var imgInstance = new fabric.Image(imgElement, {
+//   opacity: 0.85
+// });
+canvasTwo.add(new fabric.Group([ img3, textThree], { left: 500, top: 100 }))
+});
+//group 4 - Truth
+fabric.Image.fromURL('http://www.danielsilber-baker.com/myHostedContent/mlkIcons/icons/lulu-eye.png', function(img) {
+// canvas.add(oImg);
+var img4= img.scale(0.25);
+// var img1 = img.scale(0.5).set({ left: 100, top: 100 });
+var textFour= new fabric.Text(app4.todos[0].text, {
+fontFamily:  'Oswald',
+fontSize:40,
+fill: '#fffff8',
+originX: 'center',
+originY: 'center',
+left: 120
+});
+// var imgElement = document.getElementById('my-image');
+// var imgInstance = new fabric.Image(imgElement, {
+//   opacity: 0.85
+// });
+canvasTwo.add(new fabric.Group([ img4, textFour], { left: 750, top: 100 }))
+});
+canvasTwo.backgroundColor = '#D7E1EF';
+canvasTwo.selectionColor = 'rgba(0,255,0,0.3)';
+canvasTwo.selectionBorderColor = 'red';
+canvasTwo.selectionLineWidth = 5;
+</script>
+
+<script>
+var canvas =new fabric.Canvas('canvas');
+canvas.selectionColor = 'rgba(0,255,0,0.3)';
+canvas.selectionBorderColor = 'red';
+canvas.selectionLineWidth = 5;
+window.addEventListener('resize', resizeCanvas, false);
+function resizeCanvas() {
+canvas.setWidth(window.innerWidth-150);
+canvas.renderAll();
+}
+// resize on init
+resizeCanvas();
+// canvas.backgroundColor = 'rgb(255, 228, 125)'
+
+var textHolder = [];
+function create(){
+for (i = 0; i < app4.checkedNames.length; i++) {
+var text = new fabric.Text(app4.checkedNames[i], {
+fontFamily:  'oswald',
+fontSize:40,
+fill: '#FEFD95',
+left: yDown,
+top: 150*i });
+canvas.add(text)
+textHolder.push(text);
+console.log(textHolder);
+console.log(yDown)
+}
+}
+nx.onload = function() {
+
+ // nx.colorize("font-size","10%")
+
+  nx.labelSize(40)
+
+  // slider1.width = '290px';
+          nx.colorize("accent", "#1ac");
+// next I need to add a function to change the color of the text as well
+            function updateColor(){
+         // var $selector = $('.theCanvas')
+var $one = slider1.val
+            var $two = slider2.val
+            var $three = slider3.val
+            var $colorOne = Math.round($one.value*100)
+            var $colorTwo = Math.round($two.value*100)
+            var $colorThree = Math.round($three.value*100)
+            var $color = $colorOne + $colorTwo + $colorThree
+            var $wholeColor = String('rgb(' + $colorOne + ', ' + $colorTwo + ',  ' + $colorThree + ',)')
+            // $selector.css('background-color', '$wholeColor')
+            // $selector.css('background-color', 'rgb(39,70,70)')
+            var redish = new fabric.Color('#f55');
+var greenish = new fabric.Color('#5f5');
+var $test = redish.overlayWith(greenish).toHex(); // "AAAA55"
+// redish.toGrayscale().toHex(); // "A1A1A1"
+// canvas.backgroundColor='rgb(' + $colorOne + ","+$colorTwo+ ',' + $colorThree+')';
+canvas.backgroundColor='hsl(' + $colorOne + ","+$colorTwo+ '%' + ',' + $colorThree + '%'+')';
+canvas.renderAll();
+
+          }
+
+// function to update text color
+                      function updateTextColor(){
+         // var $selector = $('.theCanvas')
+var $one = slider4.val
+            var $two = slider5.val
+            var $three = slider6.val
+            var $colorOne = Math.round($one.value*100)
+            var $colorTwo = Math.round($two.value*100)
+            var $colorThree = Math.round($three.value*100)
+            var $color = $colorOne + $colorTwo + $colorThree
+            var $wholeColor = String('rgb(' + $colorOne + ', ' + $colorTwo + ',  ' + $colorThree + ',)')
+       
+       for (i = 0; i < textHolder.length; i++) {
+//if selected-for each button
+// textHolder[i].set({fill: 'rgb(' + $colorOne + ","+$colorTwo+ ',' + $colorThree+')'})
+textHolder[i].set({fill: 'hsl(' + $colorOne + ","+$colorTwo+ '%' + ',' + $colorThree + '%'+')'})
+// textHolder[i].set({fill: 'hsl(0, 100%, 50%)'})
+
+}
+// redish.toGrayscale().toHex(); // "A1A1A1"
+// text.color='rgb(' + $colorOne + ","+$colorTwo+ ',' + $colorThree+')';
+canvas.renderAll();
+
+          }
+
+
+          slider1.on('*', function(data){
+            // var selector = select('.theCanvas')
+updateColor()
+            // $selector.css('background-color','#444')
+          })
+           slider2.on('*', function(data){
+updateColor()
+          })
+            slider3.on('*', function(data){
+updateColor()
+          })
+          // nx.setLabels("on");
+      
+
+
+   // set up function for text color selector
+         slider4.on('*', function(data){
+            // var selector = select('.theCanvas')
+updateTextColor()
+            // $selector.css('background-color','#444')
+          })
+           slider5.on('*', function(data){
+updateTextColor()
+          })
+            slider6.on('*', function(data){
+updateTextColor()
+          })
+          nx.setLabels("on");
+      }   
+</script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+   <script>
+   window.sr = ScrollReveal();
+sr.reveal('.content');
+// sr.reveal('.bar');
+</script>
+<script>
+const sound = document.querySelector("audio"),
+  toggle = document.querySelector(".toggle"),
+  one = document.querySelector(".barOne"),
+  two = document.querySelector(".barTwo"),
+  three = document.querySelector(".barThree");
+let state = false;
+one.classList.add("paused");
+two.classList.add("paused");
+three.classList.add("paused");
+//start audio
+sound.pause()
+//playing and pausing
+document.querySelector(".toggle").addEventListener("click", function() {
+  if (state === true) {
+    sound.pause()
+    state = false;
+    toggle.innerHTML = "Play"
+    one.classList.add("paused");
+    two.classList.add("paused");
+    three.classList.add("paused");
+  } else {
+    sound.play()
+    state = true;
+    toggle.innerHTML = "Pause"
+    one.classList.remove("paused");
+    two.classList.remove("paused");
+    three.classList.remove("paused");
+  }
+});
+// Replaying
+document.querySelector("audio").addEventListener("ended", function() {
+  toggle.innerHTML = "Replay";
+  one.classList.add("paused");
+  two.classList.add("paused");
+  three.classList.add("paused");
+  state = false;
+  document.querySelector(".toggle").addEventListener("click", function() {
+    if (state === true) {
+      sound.pause()
+      state = false;
+      toggle.innerHTML = "Play"
+      one.classList.add("paused");
+      two.classList.add("paused");
+      three.classList.add("paused");
+    } else {
+      sound.play()
+      state = true;
+      toggle.innerHTML = "Pause"
+      one.classList.remove("paused");
+      two.classList.remove("paused");
+      three.classList.remove("paused");
+    }
+  });
+})
+</script>
+<!-- call for slabtext -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+   <script src="jquery.slabtext.min.js"></script>
+   <script>
+   // Function to slabtext the H1 headings
+   function slabTextHeadlines() {
+       $("h1").slabText({
+           // Don't slabtext the headers if the viewport is under 380px
+           "viewportBreakpoint":380
+       });
+   };
+   // Load fonts using google font loader
+   var WebFontConfig = {
+       google: { families: [ 'Open+Sans:400,700:latin', 'Oswald:700:latin' ] },
+       // slabText the headers when the font has finished loading (or not)
+       fontactive: slabTextHeadlines,
+       fontinactive: slabTextHeadlines
+   };
+   (function() {
+       var wf = document.createElement('script');
+       wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+       wf.type = 'text/javascript';
+       wf.async = 'true';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(wf, s);
+   })();
+   </script>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+background-color: #FCFCFC;
+font-family: 'Oswald';
+// color:#444;
+color:#FCF7F7;
+font-size: 1.9vw;
+height: 100vh;
+
+}
+
+.content{
+// position: absolute;
+width: 80%;
+margin-top: auto;
+margin-bottom: auto;
+margin-left: 10%;
+margin-right: auto;
+padding: auto;
+// border: solid 2px #0F3B72;
+height: 90%;
+}
+
+
+.everything{
+height: 99%;
+}
+
+.pageLink{
+
+text-align: center;
+// height: 80%;
+margin-top: 5%;
+margin-bottom: auto;
+}
+
+.holder {
+// border: solid 1px #1F75C7;
+
+height: 15%;
+width: 100%;
+}
+
+.title{
+
+position:absolute;
+margin: auto;
+left: -30%;
+// border: solid 2px #D01D24;
+width: 75%;
+color: #444;
+// height: 50%;
+top:33%;
+// font-size: 160%;
+
+// text-align: center;
+}
+
+
+
+
+h1{
+font-family: 'Oswald';
+position: relative;
+margin: auto;
+padding: 5%;
+
+
+}
+
+.animsition{
+
+margin-left: auto;
+margin-right: auto;
+// margin-top: 9%;
+margin-bottom: auto;
+// border: 2px solid #0F3B72;
+
+}
+
+.menu{
+// z-index: -1;
+// height: 100%;
+position: absolute;
+// border: solid 1px #1F75C7;
+// float: left;
+width: 90%;
+// margin:auto;
+// left:0%;
+// position: relative;
+margin-top: 0%;
+padding-top: 0%;
+padding-left: 2%;
+margin-bottom: 5%;
+}
+
+a{
+font-size: 70%;
+font-family: oswald;
+font-weight: 800;
+color: #444;
+// float: left;
+// color: #FCFCFC;
+// height: 200px;
+// border: solid 2px #D7E1EF;
+text-decoration: none;
+// letter-spacing: -.05em;
+margin-bottom: 0%;
+margin-top: 0%;
+// margin-bottom: 9%;
+display: inline;
+// margin-left: auto;
+// margin-right: auto;
+// margin: auto;
+// margin-top: 9%;
+// padding: 15%;
+
+}
+
+a:hover{
+color: #A82222;
+
+// background-color: #FCFCFC;
+// border: solid 1px #A82222;
+// display: inline;
+
+}
+
+a:link { color: #444; }
+// Unvisited link.
+a:visited { color: #444; }
+// Visited links.
+// a:hover { color: #A82222;
+// text-decoration:none;
+// text-shadow: 0 0 2px #999;}
+// The user mouses over animsition-link link.
+a:focus { color: #444; }
+// The user clicks on animsition-link link.
+a:active {  color: #444;}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototypes</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="libraries/animsition/css/animsition.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="libraries/animsition/js/animsition.js"></script>
+<link rel="stylesheet" href="materialize.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <!-- <div class="container"> -->
+<div class="animsition">
+<div class = "app">
+<!-- title sequence -->
+<div  class="row">
+<div id = "titleRow" class="col m12 s12">
+
+<div id = "title">
+<div class = "toBlast">
+<h1 class = "absolute" id = "yup">DIGITAL </h1>
+<h1 class = "absolute" id = "e40"> TEXT</h1>
+<h1 class = "absolute" id= "transformative">TRANSFORMATIVE </h1>
+<h1 id = "proto" class = "absolute" > prototypes</h1>
+</div>
+<!-- <p class = "fade"> POETRY  AND PROGRAMMING BY DANIEL SILBER-BAKER</p> -->
+<!-- <div class = "note">add a note about them being prototypes and not being finished, because the stratagies were developed to completion in order to be used in my final thesis poem, Words Birth Worlds {{Link}}</div> -->
+</div>
+</div>
+</div>
+</div>
+<!-- bhm poem -->
+<div class="row">
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle"> Black History Alphabet</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">Digital text transposed over video of performance</div>
+
+</div>
+</div>
+<div class = "innerThing">
+<div class = "imageHolder">
+<a href = "http://danielsilber-baker.com/bhm_videoText/">
+<img  src="images/bhm.gif"></a>
+</div>
+</div>
+</div>
+</div>
+<!-- end bhm poem -->
+<!-- Everthing Begins As One -->
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle">Every Thing Begins As One</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">  Choreograph Text With Javascript</div>
+</div>
+</div>
+<div class = "innerThing">
+<a href = "http://danielsilber-baker.com/poetryPlay/">
+<img  src="images/poetryAsPlay.gif">
+</a>
+</div>
+</div>
+</div>
+<!-- END Everthing Begins As One -->
+<!-- sun poem -->
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle">
+Love like the sun
+</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">  Create Living Environments</div>
+</div>
+</div>
+<div class = "innerThing">
+<a href = "http://danielsilber-baker.com/noc_poetry/">
+<img  src="images/noc_environments2.gif" >
+</a>
+</div>
+</div>
+</div>
+</div> <!-- end row -->
+<!-- end sun poem -->
+<!-- fire and violence -->
+<div class="row">
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle">
+Fire and Violence
+</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">  Use Scalable Vector Graphics (SVG) And Typography </div>
+</div>
+</div>
+<div class = "innerThing">
+<a href = "http://danielsilber-baker.com/fireViolenceSvg/">
+<img  src="images/fireViolence.gif">
+</a>
+</a>
+</div>
+</div>
+</div>
+<!-- folding poetry -->
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle">
+Folding Poetry: Us Humans
+</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">  Program Interaction And Animation </div>
+</div>
+</div>
+<div class = "innerThing">
+<a href = "http://danielsilber-baker.com/usHumansFolding/">
+<img  src="images/foldingPoem.gif">
+</a>
+</a>
+</div>
+</div>
+</div>
+<!-- word pool -->
+<div class="col m4 s12">
+<div class = "thing">
+<div class = "innerThing">
+<div class = "mediaLeft">
+<div class = "innerTitle">
+Word Pool Poem Generator
+</div>
+</div>
+<div class = "mediaRight">
+<div class = "subtitle ">  Make Participatory And Improvisational Tools </div>
+</div>
+</div>
+<div class = "innerThing">
+<a href = "http://danielsilber-baker.com/wordPools/index.html"><img  src="images/wordPoolDemo.gif">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div> <!-- anismition -->
+</div> <!-- app -->
+<!-- </div> end container -->
+<script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-down-sm',
+    outClass: 'fade-out-down-sm',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script src="jquery.fittext.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
+<script src="jquery.blast.min.js"></script>
+<script src="assets/jquery.lettering.js"></script>
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script src="jquery.shuffleLetters.js"></script>
+<script src="jquery.fittext.js"></script>
+<script src="substituteteacher.min.js"></script>
+<script>
+  jQuery(".mediaLeft").fitText(1.2, { minFontSize: '22.9vh', maxFontSize: '35vh ' });
+  jQuery(".absolute").fitText(1.2, { minFontSize: '22.9vh', maxFontSize: '36vh ' });
+  jQuery(".context").fitText(1.2, { minFontSize: '12.9vh', maxFontSize: '18vh ' });
+  jQuery(".subtitle").fitText(1.2, { minFontSize: '15.9vh', maxFontSize: '18vh ' });
+  // jQuery(".mediaLeft").fitText(1.2, { minFontSize: '10.9vh', maxFontSize: '35vh ' });
+  // jQuery(".mediaRight").fitText(1.2, { minFontSize: '10.9vh', maxFontSize: '35vh ' });
+</script>
+<script>
+// $(".toBlast").blast({   
+//   delimiter: "word",
+//   generateValueClass: true,
+//   customClass: "demo",
+//   generateIndexID: true 
+//     });
+$.Velocity.RegisterUI("animate", {
+    defaultDuration: 3000,
+    calls: [ 
+      [ { rotateZ: -45 }, 0.95, { easing: "easeInOutQuart" } ],
+      [ { translateY: '-=.7em' }, 0.95, { easing: "easeInOutQuart" } ],
+    ]
+});
+$.Velocity.RegisterUI("animateOpp", {
+    defaultDuration: 3000,
+    calls: [ 
+      [ { rotateZ: 45 }, 0.95, { easing: "easeInOutQuart" } ],
+      [ { translateY: '-=1em', translateX: '+=.1em' }, 0.95, { easing: "easeInOutQuart" } ],
+    ]
+});
+$.Velocity.RegisterUI("base", {
+    defaultDuration: 3000,
+    calls: [ 
+      // [ { letterSpacing: '-=.5em' }, 0.95, { easing: "spring" } ],
+      // [ { fontSize: '+=2em' }, 0.95, { easing: "spring" } ],
+    ]
+});
+// var $elements = $('.demo')
+var $digital = $('#yup')
+var $text = $('#e40')
+var $transformative = $('#transformative')
+// console.log($digital)
+ // $digital.velocity({scaleX: 0.5}, {duration:100});
+ // $text.velocity({rotateZ: 45}, {duration:100});
+ // $transformative.velocity({letterSpacing: '-=.5em'}, {duration:100});
+ $digital.velocity('animate');
+ $text.velocity('animateOpp');
+ $transformative.velocity('base');
+//blast text
+//by character
+//give all a common class
+//capture class with jquery $('.class')
+//velocity js on click run random mutation
+// $(".demo").hover(function() {
+//   //mouse on the item
+//   // console.log("hello")
+//   $element = this;
+//    console.log($element)
+//   // $element.velocity({ translateY: "-=100px" }, { loop: 2 });
+//   // console.log(this)
+//     var sequence = [
+// {e:$element, p: { translateY: '-40px', translateX: '-70px', fontSize: '-=65%', left: '-=12px', }, o:{ duration: 1500}},
+// ]
+// $.Velocity.RunSequence(sequence);
+// }, function() {
+//   //mouse off the item
+//       var sequence = [
+// {e:$element, p: { translateY: '80px', translateX: '50px', fontSize: '+=65%', left: '-=12px', }, o:{ duration: 1500}},
+// ]
+// $.Velocity.RunSequence(sequence);
+// });
+</script>
+<!-- <script src="slabtext/js/jquery.slabtext.min.js"></script> -->
+</body>
+</html>

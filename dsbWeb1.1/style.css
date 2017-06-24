@@ -1,0 +1,270 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+background-color: #FCFCFC;
+font-family: 'Oswald';
+ color:#444;
+font-size: 1.5vw;
+/*font-size: 2em*/
+/*height: 100vh;*/
+}
+#app{
+   width : 90%;
+    /*max-width : 50em;*/
+  margin-right: auto;
+  margin-left: auto;
+  /*margin-top: 9%;*/
+  height: 90%;
+ /*border: solid 1px #84FFA6;*/
+}
+.menu{
+ /*border: solid 1px #FF7800;*/
+}
+.innerMenu{
+ /*border: solid 1px #EE19F8;*/
+ margin: auto;
+ width: 90%;
+}
+.logo{
+color:#444;
+ /*text-shadow: .02em .02em #70171A;*/
+ /*text-shadow: 2px 2px #999;*/
+  // border: solid 1px #6300FF;
+  position:relative;
+  font-size: 100%;
+  line-height: .5em;
+  height: 15vh;
+  top: 3vh;
+ // display: inline-block;
+
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+  height: 10vh;
+  // top: 10vh;
+// margin-left: auto;
+// margin-right: auto;
+// text-align: center;
+ border: solid 1px #EE19F8;
+
+}
+
+
+#test{
+
+  font-size: 200%;
+  height: 100%;
+  position: relative;
+}
+
+#who{
+ // border: solid 1px #EE19F8;
+ position: absolute;
+ // height: 7vh;
+ margin: 0;
+ padding: 0;
+top:0;
+left: 3vh;
+
+
+}
+
+#what{
+ // border: solid 1px #FF7800;
+ position: absolute;
+ // height: 5vh;
+ top: 3vh;
+left: 3vh;
+ margin: 0;
+ padding: 0;
+
+}
+
+#logoAbout {
+ // border: solid 1px #84FFA6;
+ position: absolute;
+ // height: 3vh;
+ // top: 8.5vh;
+top:0;
+left: 0;
+ margin-top: 1.2em;
+ // display: block;
+
+}
+.innerTitle{
+margin: auto;
+width: 75%;
+margin-bottom: 0;
+margin-top: 0;
+padding: 0;
+  // border: solid 1px #13716E;
+}
+.content{
+  /*border: solid 1px #FF4274;*/
+}
+.innerContent{
+  /*border: solid 1px #0F3B72;*/
+  /*position: relative;*/ 
+  width: 80%;
+  margin: auto;
+}
+a{
+font-family: oswald;
+font-weight: 800;
+/*font-size: 40%;*/
+text-decoration: none;
+margin-bottom: 0%;
+margin-top: 0%;
+display: inline;
+}
+a:hover{
+color: #A82222;
+}
+/*a:link { color: #444; }*/
+ /*Unvisited link.*/
+/*a:visited { color: #444; }*/
+/*a:focus { color: #444; }*/
+/*The user clicks on animsition-link link.*/
+/*a:active {  color: #444;}*/
+ul {
+    list-style-type: none;
+    margin-top: 5%;
+    padding: 0;
+    padding-top: 0em;
+    overflow: hidden;
+    /*background-color: #fcfcfc;*/
+}
+li {
+    width: 100%;
+    /*margin-top:2vh;*/
+    margin-bottom:2vh;
+    height: 18vh;
+  // border: solid 1px #FF4274;
+
+    ;
+}
+li a {
+    display: block;
+    color: #444;
+    font-weight: 600;
+    /*color: #1A4759;*/
+    text-align: center;
+    font-size: 100%;
+    padding: .7em .7em;
+    text-decoration: none;
+    line-height: .9em;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #A82222;
+    /*background-color: #111;*/
+}
+h2{
+  font-weight: 200;
+  font-size: 60%;
+  line-height: .001em;
+}
+h1{
+  font-size: 75%;
+  line-height: 0em;
+  font-weight: 500;
+
+  /*width: 80%;*/
+}
+
+#poem{
+
+//   font-size: 75%;
+// margin-right: 1em;
+// margin-left: 1em;
+ /*text-shadow: .5em 0em #70171A;*/
+ /*text-shadow: .5em 0em #87201B;*/
+}
+
+.poem{
+  // position: absolute;
+float:left; 
+margin-right: .5em;
+opacity: .7;
+text-align: center;
+border: solid  0em #87201B;
+text-transform: uppercase;
+}
+#myThesis{
+ text-shadow: 0em 0em #70171A;
+}
+
+.thesis{
+ // float: left;
+ position: absolute;
+
+}
+#cc{
+  border: solid 0px #0F3B72;
+  // width: 25%;
+  position: relative;
+  // position: relative;
+  // left: 0;
+}
+.byWord{
+  position: absolute;
+  text-align: center;
+  // font-size: 55%;
+/*  float: left; */
+/*  line-height: .7em; */
+ color: #444;
+/*    color: #6B0062; */
+ text-transform: uppercase;
+ border-radius: 50%;
+margin: -1em;
+left: 3em;
+ top: 70%;
+
+ // choose three colors for border, box-shadow, and text-shadow
+ // play with making the mush more beautiful using velocity options
+     border: solid 1em rgba(168, 34, 34, .1); 
+    box-shadow: .05em 1em 1em rgba(249, 87, 56, .8); 
+   text-shadow: 0em 0em rgba(8, 61, 119, .01);
+
+
+
+}
+#thesis{
+  // position: relative;
+}
+#about{
+   text-shadow: 0em 0em #70171A;
+   color: #444;
+   font-weight: 200;
+  font-size: 50%;
+  line-height: 0em;
+  margin-top: 0%;
+  /*margin: 3%;*/
+}
+#about:hover{
+    color: #A82222;
+}
+.vtxt {
+
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin-bottom: 0em;
+}
+
+
+#toolkitIcon{
+
+  /*position:relative;*/
+  /*margin-top: -2em;*/
+ /*text-shadow: .5em .5em #70171A;*/
+
+}

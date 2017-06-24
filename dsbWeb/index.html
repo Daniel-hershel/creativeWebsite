@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homepage: DSB Website</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Khula:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900" rel="stylesheet">
+
+<link rel="stylesheet" href="libraries/animsition/css/animsition.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="libraries/animsition/js/animsition.js"></script>
+<!-- <script src="app.js"></script> -->
+<!-- <link rel="stylesheet/less" type="text/css" href="styles.less" /> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js" charset="utf-8"></script> -->
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+<div class="animsition">
+<div id = "app">
+
+<div class = "logo">
+<div  id = "logoAbout" >
+<a id = "about" href="sub_about.html">ABOUT</a>
+</div>
+<div id = "who" class = "innerTitle">
+ DANIEL SILBER-BAKER 
+<!-- <h1> DANIEL SILBER-BAKER </h1> -->
+</div>
+<div id = "what" class = "innerTitle">
+
+<!-- <h2> CREATIVE CODER &amp; </h2> -->
+ CREATIVE CODER &amp; 
+</div>
+<div id = "whatElse" class = "innerTitle">
+
+
+ FRONT END DEVELOPER 
+</div>
+
+</div>
+
+<div class = "menu">
+<div class = "innerMenu">
+
+<ul>
+<li id = "interact"><a id = "interactA" href="sub_interact.html">ACTIVITIES</a></li>
+<li id = "poetry"><a  id = "poem" href="sub_poetry.html">abcdefghijklmnopqrstuvwxyz</a></li>
+<li  id = "creativeCode"><a id = "cc" href="sub_text.html"> digital text toolkit   </a></li>
+
+</ul>
+</div>
+</div>
+</div> <!-- end app -->
+</div> <!-- end animsition -->
+<script>
+$(document).ready(function() {
+$(".animsition").animsition({
+inClass: 'fade-in-down-sm',
+outClass: 'fade-out-down-sm',
+inDuration: 1500,
+outDuration: 800,
+linkElement: '.animsition-link',
+// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+loading: true,
+loadingParentElement: 'body', //animsition wrapper element
+loadingClass: 'animsition-loading',
+loadingInner: '', // e.g '<img src="loading.svg" />'
+timeout: false,
+timeoutCountdown: 5000,
+onLoadEvent: true,
+browser: [ 'animation-duration', '-webkit-animation-duration'],
+// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+overlay : false,
+overlayClass : 'animsition-overlay-slide',
+overlayParentElement : 'body',
+transition: function(url){ window.location.href = url; }
+});
+});
+</script>
+<script src="src/lining.js"></script>
+<script src="libraries/p5.js" type="text/javascript"></script>
+<script src="libraries/p5.dom.js" type="text/javascript"></script>
+<script src="libraries/p5.gif.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
+<script src="libraries/jquery/jquery.blast.min.js"></script>
+<script src="libraries/jquery/jquery.lettering.js"></script>
+<script src="libraries/textualizer.min.js" type="text/javascript"></script>
+<script src="libraries/oridomi.min.js"></script>
+<script src="libraries/jquery/jquery.fittext.js"></script>
+<script src="libraries/plugins.js"></script>
+<!-- <script src="libraries/registeredAnimations.js"></script> -->
+<script>
+// jQuery("li").fitText(1.2, { minFontSize: '25vh', maxFontSize: '45vh' });
+// jQuery(".logo").fitText(1.2, { minFontSize: '28.9vh', maxFontSize: '56vh ' });
+// jQuery("#cc").fitText(1.2, { minFontSize: '25vh', maxFontSize: '45vh ' });
+// jQuery("#poem").fitText(1.2, { minFontSize: '20vh', maxFontSize: '35vh ' });
+</script>
+<script>
+
+/* ABOUT FOR LOGO */
+
+$eleMent = $('#logoAbout')
+
+$eleMent.velocity({translateY: '-=5em',translateX: '-=4em',rotateZ: '90deg'}, {duration: 800, delay:0,})
+</script>
+
+<script>
+
+/* INTERACTIVITIES*/
+
+$("#interact").blast({
+delimiter: "character",
+// generateValueClass: true,
+customClass: "demo",
+// generateIndexID: true
+});
+//blast text
+//by character
+//give all a common class
+//capture class with jquery $('.class')
+//velocity js on click run random mutation
+$.Velocity.RegisterUI("callout.twirl", {
+defaultDuration: 3000,
+calls: [
+[ { rotateZ: 1080 }, 0.50 ],
+[ { scaleX: 0.5 }, 0.25, { easing: "spring" } ],
+[ { scaleX: 1 }, 0.25, { easing: "spring" } ]
+]
+});
+
+$mutate = $('.demo').toArray()
+// console.log($mutate)
+// var links = $('.demo')
+$(".demo").hover(function() {
+//mouse on the item
+// console.log("hello")
+$element = this;
+console.log($element)
+// $element.velocity({ translateY: "-=100px" }, { loop: 2 });
+// console.log(this)
+var sequence = [
+{e:$element, p: { color: '#70171A', translateY: '-40px', translateX: '-70px', fontSize: '-=65%', left: '-=12px', }, o:{ duration: 1500}},
+]
+$.Velocity.RunSequence(sequence);
+}, function() {
+//mouse off the item
+var sequence = [
+{e:$element, p: { color: '#444', translateY: '80px', translateX: '50px', fontSize: '+=65%', left: '-=12px', }, o:{ duration: 1500}},
+]
+$.Velocity.RunSequence(sequence);
+});
+</script>
+
+
+
+<script>
+/* POETRY */
+
+/* set up variables outside of functions*/
+$("#poem").blast({
+delimiter: "character",
+search: false, // Perform a search *instead* of delimiting
+tag: "div", // Set the wrapping element type (e.g. "div")
+customClass: "poem", // Add a custom class to wrappers
+generateIndexID: true,// Add #customClass-i to wrappers
+generateValueClass: true, // Add .blast-word-val to wrappers
+// stripHTMLTags: false // Strip HTML before blasting
+returnGenerated: true // Return generated elements to stack
+});
+
+
+var $poetry= $('.poem')
+
+var $a = $(".blast-character-a");
+var $b = $(".blast-character-b");
+var $c = $(".blast-character-c");
+var $d = $(".blast-character-d");
+var $e = $(".blast-character-e");
+var $f = $(".blast-character-f");
+var $g = $(".blast-character-g");
+var $h = $(".blast-character-h");
+var $i = $(".blast-character-i");
+var $j = $(".blast-character-j");
+var $k = $(".blast-character-k");
+var $l = $(".blast-character-l");
+var $m = $(".blast-character-m");
+var $n = $(".blast-character-n");
+var $o = $(".blast-character-o");
+var $p = $(".blast-character-p");
+var $q = $(".blast-character-q");
+var $r = $(".blast-character-r");
+var $s = $(".blast-character-s");
+var $t = $(".blast-character-t");
+var $u = $(".blast-character-u");
+var $v = $(".blast-character-v");
+var $w = $(".blast-character-w");
+var $x = $(".blast-character-x");
+var $y = $(".blast-character-y");
+var $z = $(".blast-character-z");
+
+
+var alphabet = [$a,$b,$c,$d,$f,$g,$h,$i,$j,$k,$l,$m,$n, $q,$s,$u,$v,$w, $x,$z]
+var $poem = [$p, $o, $e, $t, $r, $y]
+
+$p.addClass('poetryLetter')
+$o.addClass('poetryLetter')
+$e.addClass('poetryLetter')
+$t.addClass('poetryLetter')
+$r.addClass('poetryLetter')
+$y.addClass('poetryLetter')
+
+$el = $(".poetryLetter").toArray();
+var $elSet =  $el.slice(0,7)
+var $poemDiv = $('#poem')
+// call first function
+
+whoRunIt()
+
+function whoRunIt (){
+
+
+// poetry
+
+// $poemDiv.velocity({
+
+// p:{translateX: '+=2em'},
+// o:{duration:10}
+
+// })
+
+$.Velocity.RegisterUI("poem", {
+defaultDuration: 3000,
+calls: [
+[ { opacity: 1, fontSize:'-=10%' }, 0.25, { duration: 500, delay:100, stagger: 100, easing: "easeInExpo" } ],
+// [{ textShadowY: 15,}, 1, { easing: "easeInExpo" }],
+]
+});
+
+
+// function start() {
+
+
+//animate the poetry to full opacity
+var animationSequence = []
+for (var i = 0; i < $poem.length; i++){
+animateAlphabet =  { e: $poem[i], p: 'poem', options: {
+
+duration: 200,
+delay: 100,
+drag: 300,
+easing: "linear",
+
+}},
+
+animationSequence.push(animateAlphabet)
+
+}
+
+
+
+//shrink the rest of the letters
+for (var i = 0; i < alphabet.length; i++){
+rest =  { e: alphabet[i],  p: {fontSize: '-=.6em', margin:'-=.01em'}, options: {
+
+duration: 100,
+delay: 100,
+drag: 300,
+easing: "linear"
+//       complete:  function(){
+
+
+//       }
+}},
+
+animationSequence.push(rest)
+
+}
+
+$.Velocity.RunSequence(animationSequence);
+
+
+
+//call second function
+reRunIt()
+
+}
+
+function reRunIt(){
+
+
+
+//move the poetry into place
+var runTime = 1000
+
+var seqTwo = [
+{ e: $p, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=2.1em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+{ e: $o, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=.6em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+{ e: $e, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=3em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+{ e: $t, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=2em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+{ e: $r, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=2.4em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+{ e: $y, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=1.2em'}, o:{loop: true, sequenceQueue: false,  duration: runTime,delay: 0, easing: "easeInOutCirc",}
+},
+
+]
+
+$.Velocity.RunSequence(seqTwo);
+
+
+// animationSequence.push(animateAlphabetP)
+//   animationSequence.push(animateAlphabetO)
+//   animationSequence.push(animateAlphabetE)
+//   animationSequence.push(animateAlphabetT)
+//   animationSequence.push(animateAlphabetR)
+//   animationSequence.push(animateAlphabetY)
+
+// turn on here
+
+
+var reRun = [
+
+
+animateAlphabetP = { e: $p, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: runTime, easing: "linear", loop:true, }
+},
+animateAlphabetO = { e: $o, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: 0, easing: "linear", loop:true, sequenceQueue: false}
+},
+animateAlphabetE = { e: $e, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: 0, easing: "linear", loop:true, sequenceQueue: false}
+},
+animateAlphabetT = { e: $t, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: 0, easing: "linear", loop:true, sequenceQueue: false}
+},
+animateAlphabetR = { e: $r, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: 0, easing: "linear", loop:true, sequenceQueue: false}
+},
+animateAlphabetY = { e: $y, p: {fontSize: '-=.1em',translateY: '-=1em',translateX:0}, o:{ duration: runTime,delay: 0, easing: "linear", loop:true, sequenceQueue: false}
+},
+
+
+]
+
+$.Velocity.RunSequence(reRun);
+
+}
+
+
+
+
+</script>
+
+
+<script>
+/* DIGITAL TEXT TOOLKIT */
+
+// have blast js create elements from each of the letters in the div #cc
+$("#cc").blast({
+delimiter: "character",// Set the delimiter type (see left)
+search: false,
+tag: "div", // Set the wrapping element type (e.g. "div")
+customClass: "byWord", // Add a custom class to wrappers
+generateIndexID: true,// Add #customClass-i to wrappers
+generateValueClass: true,
+returnGenerated: true
+});
+
+/* SETTING UP VARIABLES FOR LOTS OF DIFFERENT WAYS TO CONTROL THE LETTERS, */
+
+/* spread operator in javascript */
+// [...'𝟘𝟙𝟚𝟛'] returns an array of [0,1,2,3]
+// so its [...'whatever you want turned into an array']
+
+/* not active method*/
+// var myList = [...'digital text toolkit']
+
+/* For returning letters/characters from string in alphabetical order instead of presented order */
+
+// create an array of letters in alphabetical order that appear in the given string
+
+// var $goods = myList.sort()
+
+//append them to the appropriate container
+
+// $elementWord.append($goods)
+// if blasted by word instead of character
+
+// var $digital = $('#byWord-0')
+// var $text = $('#byWord-1')
+// var $toolkit = $('#byWord-2')
+
+/*place the entire element containing the words towards the center manually with velocity call*/
+var $elementWord = $('#cc')
+
+
+// $elementWord.velocity({ p: {translateX: '+=2em',}, o:{ duration: 150, delay: 10,}})
+
+//collect the letters by the custom class added to each by blast.js and put them in an array
+var $element = $('.byWord').toArray()
+
+/* use .slice() method to put the word structure back together  */
+
+// create an array of d i g i t a l
+var wordOne =  $element.slice(0,7)
+// create an array of t e x t
+var wordTwo = $element.slice(7, 11)
+// create an array of t o o l k i t
+var wordThree = $element.slice(11, 20)
+
+/* the initial state of text is set in the css using the css class 'byWord' which was assigned during the blast.js portion*/
+
+/*set up the secondary state 'the mush'*/
+//using velocity js sequences to animate the css values of individual letters and text as a whole
+
+/*THE MUSH!*/
+var toolkit_sequence = [
+
+{e:$element,
+ p: {
+fontSize: '-=15%',
+ translateY: '+=4.5em',
+ translateX: '+=4em',
+ rotateZ: function(i, total) {
+return i * 10;},
+ rotateX: -180,
+ rotateY: 95,
+ skewX: -45,
+ lineHeight: '-=.9em',
+ color: '#06AED5',
+},
+ o:{ duration: 1500,
+ delay: 100,
+ loop: true}},
+
+]
+
+/*RUN THE MUSH!*/
+$.Velocity.RunSequence(toolkit_sequence);
+
+//this second sequence resets the values effected by the first sequence, returning each letter element to it's original state
+var durTime = 4500;
+var sequenceTwo = [
+
+// DIGITAL
+{e:wordOne,
+
+ p:{
+translateY:'-=.5em',
+translateX: function(i, total) {
+return (i+2) * 25;},
+skewX: 0,
+rotateY: 0,
+rotateX: 0,
+textShadowY:0,
+rotateZ:0,
+borderRadius: 0,
+borderColor: '#FCFCFC',
+color: '#444',
+borderWidth: '-=5em',
+boxShadowX:0,
+boxShadowY: 0,
+boxShadowBlur: 0 
+}, /*end properties*/
+
+o:{
+ sequenceQueue: false,
+duration: durTime,
+delay: 0
+} /* end options*/
+
+}, /*end wordOne animation*/
+// text
+{e:wordTwo, p:{
+
+ translateY:'+=.5em',
+  translateX: function(i,total) {
+return (i+2) * 25;
+},
+ skewX: 0,
+ rotateY: 0,
+ rotateX: 0,
+   textShadowY:0,
+ rotateZ:0,
+  borderRadius: 0,
+ borderColor: '#FCFCFC',
+ color: '#444',
+  borderWidth: '-=5em',
+ boxShadowX:0,
+ boxShadowY: 0,
+ boxShadowBlur: 0  },
+ o:{  sequenceQueue: false,
+  duration:durTime,
+ delay:0}},
+
+// toolkit
+{e:wordThree, p:{
+ translateY:'+=1.5em',
+ translateX: function(i, total) {
+return (i+2) * 25;},
+ skewX: 0,
+ rotateY: 0,
+ rotateX: 0,
+  textShadowY:0,
+ rotateZ:0,
+  borderRadius: 0,
+ borderColor: '#FCFCFC',
+ color: '#444',
+ borderWidth: '-=5em',
+ boxShadowX:0,
+ boxShadowY: 0,
+ boxShadowBlur: 0   },
+  o:{  sequenceQueue: false,
+    duration: durTime,
+ delay: 0}},
+
+
+]
+
+//run second sequence
+$.Velocity.RunSequence(sequenceTwo);
+
+//velocity js register animations template
+// $.Velocity.RegisterUI("digitaltext", {
+//     defaultDuration: 3000,
+//     calls: [
+
+//             [ { translateX: '+=5em'  }, 1, {easing: "easeInSine"} ],
+
+//     ]
+// });
+
+
+
+
+
+</script>
+
+
+<!-- <script>
+// $('#overature').on('click', '.item', function() {
+$('#ogStory').click(function() {
+var $content = $('#ogPoem')
+// $content.velocity("transition.flipXIn")
+// velocity('slideUp', {duration: 200});
+if ($content.is(':visible')) {
+// $content.velocity('slideUp', {duration: 200});
+$content.velocity("transition.flipXOut")
+}
+else {
+$content.velocity("transition.flipXIn")
+// $content.velocity('slideDown', {duration: 200});
+}
+});
+</script> -->
+
+</body>
+</html>

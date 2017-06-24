@@ -1,0 +1,871 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: #FCFCFC;
+  color: #444;
+      font-family:"Oswald";
+       font-weight:700;
+font-size: 2.9vw;
+// font-size: 2.3vw;
+}
+
+.nx{
+
+}
+
+
+p{
+       font-weight:300;
+       color: #444;
+       font-size: 50%;
+       line-height: .8em;
+           font-family: 'Khula', sans-serif;
+           margin-top:.3em;
+           margin-bottom:.3em;
+
+}
+
+// title card font
+h2{
+// text-align: center;
+margin:auto;
+  font-size: 80%;
+  width: 85%;
+
+
+}
+
+h4{
+  color: #444;
+  line-height: 2em;
+       font-weight:600;
+font-size: 80%;
+  width: 100%;
+}
+
+i{
+text-shadow: .01em 0em #269288;
+color: #FCFCFC;
+}
+#app{
+   // width : 90%;
+   //  max-width : 80em;
+  margin-right: auto;
+  margin-left: auto;
+ /*border: solid 1px #84FFA6;*/
+}
+
+.welcome{
+margin:auto;
+  font-size: 100%;
+  width: 65%;
+  margin: auto;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 4%;
+  color: #FCFCFC;
+  font-weight: 700;
+     text-shadow: 3px 3px 5px #444;;
+  padding-top: 5%;
+
+}
+
+.innerTitle{
+margin: auto;
+  height: 80%;
+  width: 80%;
+  // color: FCFCFC;
+  text-transform: uppercase;
+  line-height: 1.7em;
+
+  // border: solid 5px #FFE47D;
+}
+
+.content{
+  // border: solid 1px #FF4274;
+       height:100vh;
+       margin: .5vh;
+}
+
+
+.wraped{
+
+  border: solid 0em #269288;
+text-shadow: .0em 0em #269288;
+
+}
+#exploreTitle{
+text-shadow: .07em 0em #269288;
+}
+
+#engage{
+text-shadow: .07em 0em #269288;
+}
+
+#reCreate{
+
+}
+
+.context{
+
+    font-size: 80%;
+  width: 75%;
+  margin: auto;
+  line-height: .9em;
+  text-transform: uppercase;
+  // opacity: .7;
+  color:rgba(68, 68, 68, 1);
+  font-weight: 500;
+}
+.smallHolder{
+
+width: 85%;
+text-transform: uppercase;
+/*position:relative;*/
+margin: auto;
+/*border: solid 1px #444;*/
+
+
+}
+
+.holder{
+
+margin: auto;
+margin-top: 1.5em;
+// height: 69%;
+// margin-bottom: 2em;
+/*border: solid 1px #269288;*/
+}
+
+.quote{
+
+margin-top: 2em;
+  font-size: 120%;
+  font-weight: 300;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3em;
+
+}
+
+.finalQuote{
+  font-size: 80%;
+  width: 85%;
+  margin: auto;
+  line-height: .9em;
+  text-transform: uppercase;
+  // opacity: .7;
+  color:rgba(68, 68, 68, 1);
+  font-weight: 500;
+}
+
+
+
+.explain{
+
+font-size: 50%;
+line-height: .5em;
+
+}
+
+.hint{
+width: 80%;
+margin: auto;
+}
+
+
+
+
+.centerAllign{
+  text-align: center;
+}
+.innerContent{
+  // border: solid 1px #0F3B72;
+  width: 90%;
+  margin: auto;
+  // margin-top: 15%;
+}
+h1{
+    font-family:"Oswald";
+       font-weight:700;
+       font-size: 200%;
+       margin-bottom: 0%;
+       margin-top: 0%;
+       padding-bottom: 0%;
+       text-transform: uppercase; 
+       
+}
+
+
+i{
+
+  float: left;
+  position:absolute;
+  left: 33%;
+}
+
+.floatRIght{
+  float:right;
+
+}
+
+.floatLeft{
+  float:left;
+
+}
+.title{
+color:#FCFCFC;
+
+}
+
+
+.sectionTitle{
+
+font-size: 300%;
+width: 80%;
+margin: auto;
+margin-top: 0;
+padding-top: 0;
+  // border: solid 1px #D01D24;
+
+}
+.topTitle{
+
+top: 0%;
+  // border: solid 1px #D01D24;
+
+}
+.top{
+position: absolute;
+height: 45%;
+// top: 5%;
+margin-top: 5%;
+margin-bottom: 0;
+
+  // border: solid 1px #0F3B72;
+}
+.bottom{
+position: absolute;
+height: 45%;
+top: 55%;
+// width: 85%;
+  // border: solid 1px #269288;
+}
+
+
+
+.topThird{
+position: absolute;
+top: 0%;
+
+height: 33%;
+// width: 80%;
+// left: 18%;
+margin: auto;
+
+  // border: solid 1px #269288;
+}
+.bottomTwoThird{
+position: absolute;
+top: 33%;
+height: 66%;
+width: 90%;
+  // border: solid 1px #0F3B72;
+
+
+}
+.left{
+position: absolute;
+// height: 100%;
+left: 0%;
+width: 50%;
+  // border: solid 1px #0F3B72;
+}
+.innerLeft{
+width: 80%;
+margin: auto;
+}
+.right{
+  position: absolute;
+  left: 50%;
+width: 50%;
+}
+.innerRight{
+width: 80%;
+margin: auto;
+}
+
+.leftSkinny{
+position:absolute;
+  width: 20%;
+  left: 0;
+
+}
+
+.rightWide{
+position:absolute;
+width: 80%;
+left: 20%;
+
+}
+.headerBack{
+background-image: url('http://www.danielsilber-baker.com/myHostedContent/contentImages/mlk.jpg');
+background-repeat: repeat;
+background-size: 50%;
+
+ // background-repeat: repeat-y;
+   // background-position: right top;
+  // background-repeat: no-repeat;
+   // background-attachment: fixed;
+}
+.instructions{
+/*font-family: 'Montserrat';*/
+font-family: 'Oswald';
+weight: 300;
+     color:#444;
+     font-size: 70%;
+     width: 85%;
+     margin:auto;
+     line-height: 1em;
+     /*width: 55%;*/
+     /*margin-left: auto;*/
+     /*margin-right: auto;*/
+     // margin-bottom: 0px;
+     // text-align: center;
+}
+
+.instructionTitle{
+
+  color: #444;
+       font-size: 80%;
+       text-transform: uppercase;
+       width: 80%;
+       margin: auto;
+       line-height: 1em;
+       text-align: center;
+}
+
+.instructionSmall{
+// font-size: 70%;
+  color: #444;
+  // weight: 200;
+  font-family: 'Khula', sans-serif;
+       line-height: 1em;
+       width: 80%;
+       margin: auto;
+       margin-top: 2%;
+
+}
+
+.generateHolder{
+
+width: 100%;
+margin: auto;
+margin-top: 1.5em;
+   // border: solid 5em #E31F1B;
+
+
+}
+
+.generate{
+width: 100%;
+height: 3.5em;
+margin: auto;
+text-align: center;
+font-size: 100%;
+  // background: #444;
+  color: #FCFCFC;
+   //   box-shadow: 10px 10px 5px #888888;
+   // border: solid .05em #262626;
+
+  //  border-bottom: 5px solid#262626;
+  // text-shadow: 0px -2px#262626;
+  background-color: #269288;
+  border-bottom: 5px solid #207A71;
+  text-shadow: 0px -2px #207A71;
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(68, 68, 68,1);
+  padding: .5rem;
+  transition: .6s background;
+   // box-shadow: 10px 10px 5px #888888;
+   // border: solid .05em #262626;
+
+}
+a:hover{
+   box-shadow: 8px 8px 15px #888888;
+
+}
+ul{
+  display:list-item;
+}
+
+
+.theCanvas:active{
+
+  // background-color: #FCFCFC;
+
+}
+
+
+.contentCanvas{
+
+       height:100vh;
+       width: 90%;
+       margin:auto;
+  // border: solid 1px #FF4274;
+
+}
+
+.controlPanel{
+   // border: solid .05em #262626;
+   position: absolute;
+   width: 30%;
+   // margin:auto;
+   float:left;
+
+}
+
+
+
+.interactiveCanvasHolder{
+
+  // border: solid 2px #269288;
+  width: 72%;
+  margin: auto;
+  position: absolute;
+  left: 28%;
+  // margin-top: 10%;
+}
+
+.textCanvas{
+ // border: solid 2px #007291;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 78%;
+  // left: 5%;
+  height: 20%;
+
+}
+
+.buttonHolder{
+   // border: solid 2px #FFE47D;
+  width: 90%;
+  height: 4em;
+  margin: auto;
+  // position: absolute;
+  // left: 60%;
+  top: 0;
+}
+
+#textButton{
+  height: 100%;
+  // float: right;
+  // position: absolute;
+  // top: 0;
+  width: 90%;
+margin-top: 1% ;
+text-align: center;
+font-size: 100%;
+  color: #FCFCFC;
+  background-color: rgba(68, 68, 68, 1)
+
+}
+
+// #userConcernOne{
+
+//   height: 50%;
+//   width: 90%;
+//   margin: auto;
+//   font-size: 1.4em;
+//   font-family: "Oswald";
+//   background-color: rgba(38, 146, 136, .1)
+// }
+
+
+.userInput{
+
+  height: 50%;
+  width: 100%;
+  font-size: 2em;
+  border: none;
+  font-family: "Oswald";
+  background-color: rgba(68, 68, 68, .8);
+  color: #FCFCFC;
+}
+.darkBack {
+background-image: url('style/backgrounds/inverse-bg.jpg');
+  color: #fffff8;
+padding-top:0;
+margin-bottom: 0px;
+}
+#daQuote{
+ // width:55%;
+ color:#D22042;
+ weight: 400;
+ margin-left: auto;
+ margin-right: auto;
+}
+.lightBack {
+background-image: url('style/backgrounds/light_grey.png');
+padding-top:0;
+color: #081422;
+margin-bottom: 0px;
+}
+.darkBackAlt{
+  background-image: url('style/backgrounds/navy_blue.png');
+ /*background-image: url('style/backgrounds/inverse-bg.jpg');*/
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+.large{
+  font-size: 10em;
+  margin-bottom: 0em;
+  text-align: center;
+
+}
+.stage{
+background-image: url('style/backgrounds/kale-salad.jpg');
+// background-image: url('style/backgrounds/pink_dust.png');
+color: '#FCFCFC';
+// margin-bottom: 0px;
+}
+
+
+
+// canvas{
+//   margin:auto;
+// }
+
+.canvasInstructions{
+height: 25%;
+  // border: solid 1px #D01D24;
+
+}
+
+.canvasHolder{
+
+  // border: solid 2px #269288;
+  width: 90%;
+  margin: auto;
+  // margin-top: 10%;
+  height: 90%;
+  margin-top: 7%;
+  padding-top: 0;
+  overflow: auto;
+  // position: absolute;
+
+}
+
+#engageCanvas{
+
+}
+#canvas {
+color:#fafbf4;
+margin:auto;
+// position: absolute;
+// top: 50%;
+}
+#controls{
+  /*height: 300px;*/
+  color: #fafbf4;
+}
+#controlsText{
+  /*height: 300px;*/
+  color: #fafbf4;
+}
+
+
+.labels{
+line-height: 1.5em;
+color: #444;
+background-color: #FCFCFC;
+
+}
+
+.labels:hover{
+background-color: #444;
+color:#FCFCFC;
+
+}
+//not working
+// label:hover{
+// background-color: #729FC1;
+
+// }
+
+
+.cardHolder{
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+
+}
+
+input[type=checkbox] + label {
+  list-style-type: none;
+border: 5px solid #444;
+border-radius: 8px;
+color: #444;
+text-align: center;
+font-weight: 600;
+font-family: 'Oswald';
+/*background: #0C294C;*/
+display: inline-block;
+width: 90%;
+// width: 20em;
+margin:auto;
+margin-top: .8em;
+height: 2.5em;
+text-transform: uppercase;
+  // border-bottom: 5px solid #207A71;
+}
+input[type="checkbox"]:hover {
+background-color: #729FC1;
+
+
+}
+/*styling for checkboxes when they are checked*/
+input[type=checkbox]:checked + label {
+color:white;
+font-style: normal;
+background: #444;
+}
+/*#source{
+width: 45%;
+margin: auto;
+padding: 10px;
+font-size: 18px;
+}*/
+#inputZone {
+padding-bottom: 20px;
+margin-bottom: 50px;
+border:1px solid #000000;
+}
+/*buttons*/
+
+.ghost-button {
+display: inline-block;
+width: 200px;
+padding: 8px;
+color: #fff;
+border: 1px solid #fff;
+text-align: center;
+outline: none;
+text-decoration: none;
+}
+.ghost-button:active {
+  background-color: #D41F3D;
+}
+.ghost-button:hover{
+background-color: #fff;
+color: #000;
+}
+.ghost-button-rounded-corners {
+display: inline-block;
+width: 200px;
+padding: 8px;
+color: #fff;
+border: 1px solid #fff;
+border-radius: 5px;
+text-align: center;
+outline: none;
+text-decoration: none;
+}
+.ghost-button-rounded-corners:hover{
+    background-color: #D41F3D;
+}
+.ghost-button-rounded-corners:active {
+background-color: #fff;
+color: #000;
+}
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+transition: all .3s ease;
+}
+.slide-fade-leave-active {
+transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-active {
+transform: translateX(10px);
+opacity: 0;
+}
+/*#sources{
+font-size:  .7rem;
+  margin-left: 18rem;
+}*/
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    float:left;
+    /*// min-width: 100%;*/
+    min-height: 100%;
+    /*// width: auto;*/
+    /*// height: auto;*/
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ /*// background: url('www.danielsilber-baker.com/standingRock/stillFootage.png') no-repeat;
+  // background-size: cover;*/
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+.bodyPart {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 3rem;
+  width: 80%;
+  margin: .01rem;
+  float: left;
+  font-size: 1.3rem;
+}
+/*music player*/
+.toggle {
+  padding: .1em;
+  height: 2em;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  // width: 200px;
+  // background: #D22042;
+  // border: none;
+  // font-size: 1em;
+  // color: white;
+  // border-radius: 3px;
+  // margin: 0 auto;
+  // display: block;
+  // cursor: pointer;
+  // outline: none;
+}
+.music {
+
+  width: 7vw;
+  display: flex;
+  float: left;
+
+  margin: .1vh auto;
+  margin-top: 7vh;
+}
+.music .bar {
+  width: calc(20vw / 3);
+  background: #D22042;
+  /*background: #ff5252;*/
+  height: 1vw;
+  margin-left: .5vw;
+}
+.music .bar.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.music .barOne {
+  height: 5vw;
+  margin-top: 1vw;
+  animation: barOne 0.75s linear infinite;
+}
+.music .barTwo {
+  height: 2vw;
+  margin-top: 1vw;
+  animation: barTwo 1s linear infinite;
+}
+.music .barThree {
+  height: 3vw;
+  margin-top: 1vw;
+  animation: barThree 0.75s linear infinite;
+}
+@keyframes barOne {
+  0% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+  50% {
+    height: 7.5vw;
+    margin-top: 7.5vw;
+  }
+  100% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+}
+@keyframes barTwo {
+  0% {
+    height: 18vw;
+    margin-top: -3vw;
+  }
+  50% {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+  100% {
+    height: 18vw;
+    margin-top: -3vw;
+  }
+}
+@keyframes barThree {
+  0% {
+    height: 14vw;
+    margin-top: 1vw;
+  }
+  50% {
+    height: 20vw;
+    margin-top: -5vw;
+  }
+  100% {
+    height: 14vw;
+    margin-top: 1vw;
+  }
+}
+.slabtexted .slabtext
+    {
+    display: -moz-inline-box;
+    display: inline-block;
+    white-space: nowrap;
+    }
+.slabtextinactive .slabtext
+    {
+    display: inline;
+    white-space: normal;
+    font-size: 1em !important;
+    letter-spacing: inherit !important;
+    word-spacing: inherit !important;
+    *letter-spacing: normal !important;
+    *word-spacing: normal !important;
+    }
+.slabtextdone .slabtext
+    {
+    display: block;
+    }
+
+
+// turn off highlight on active for buttons and inputs
+input {
+  outline: none;
+}
+input:focus {outline:none;}
+
+button{
+  outline:none;
+}
+
+button:focus{
+  outline:none;
+}

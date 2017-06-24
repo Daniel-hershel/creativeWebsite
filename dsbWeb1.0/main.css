@@ -1,0 +1,448 @@
+@font-face {
+font-family: 'archivo';
+src:  url('fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+url('fonts/ArchivoNarrow-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'archivoBold';
+src:  url('fonts/ArchivoNarrow-Bold.woff2') format('woff2'),
+url('fonts/ArchivoNarrow-Bold.woff') format('woff');
+}
+html {
+box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body{
+background-color: #FCFCFC;
+font-family: 'Oswald';
+color:#444;
+font-size: 2.3vw;
+/*font-size: 2em*/
+/*height: 100vh;*/
+}
+
+h1{
+line-height: .5em;
+
+}
+
+#app{
+width : 95%;
+max-width : 80em;
+margin-right: auto;
+margin-left: auto;
+// position: relative;
+// border: solid 1px #84FFA6;
+}
+
+.menu{
+width: 100%;
+// position: relative;
+
+// border: solid 1px #EE19F8;
+
+}
+
+.innerMenu{
+
+// border: solid 1px #444;
+margin: auto;
+width: 100%;
+// position: absolute;
+
+
+}
+
+.title{
+
+width: 90%;
+margin: auto;
+// color:#385380;
+
+// border: solid 1px #6300FF;
+/*position:absolute;*/
+// font-si ze: 80%;
+}
+
+
+.innerTitle{
+margin: auto;
+width: 70%;
+display: inline;
+text-align: center;
+// letter-spacing: .01em;
+// font-weight: 900;
+// border: solid 1px #13716E;
+}
+
+.content{
+// border: solid 1px #FF4274;
+width: 100%;
+}
+
+.innerContent{
+// border: solid 1px #0F3B72;
+position: relative;
+width: 90%;
+margin: auto;
+margin-bottom: 5vh;
+
+// padding: 1vh;
+
+}
+
+
+.thing{
+// border: solid 5px #444;
+width: 100%;
+margin-bottom: 3em;
+position: relative;
+height: 35vh;
+display:inline-block;
+
+overflow: hidden;
+
+}
+
+.innerThing{
+// border: solid 1px #269288;
+width: 100%;
+// max-width: 20em;
+// min-width:  10em;
+margin: auto;
+margin-top: .5vh;
+// height: 40vh;
+position: relative;
+
+
+
+}
+
+.innerThingLeft{
+// display: inline-block;
+position: absolute;
+width: 60%;
+// float:left;
+// border: solid 1px #FFE47D;
+
+}
+
+
+.innerThingRight{
+// border: solid 1px #E31F1B;
+position: absolute;
+// float:right;
+width: 50%;
+left: 65%;
+// display: inline-block;
+
+}
+
+
+.thingTitle{
+width: 100%;
+// margin:auto;
+margin: 0;
+margin-bottom: .5em;
+font-weight: 800;
+// border: solid .1em #444;
+line-height: .9em;
+// color:#6B0062;
+color:#444;
+
+text-transform: uppercase;
+// letter-spacing: .001em;
+
+}
+
+.thingDescription{
+font-family: 'archivo';
+// border: solid 1px #239B6F;
+
+width: 100%;
+margin:0;
+opacity: .7;
+margin-bottom: .5em;
+line-height: .9em;
+font-weight:200;
+// margin-top: 1vh;
+
+
+}
+
+
+.thingLink{
+
+// height: 50%;
+}
+.mediaDescription{
+line-height: .9em;
+// margin: auto;
+margin: 0;
+width: 60%;
+font-weight: 200;
+// font-family: 'Titillium Web', sans-serif;
+font-family: 'archivo';
+
+opacity: .7;
+
+}
+
+.mediaLeft{
+
+position: absolute;
+left: 0;
+width: 70%;
+
+}
+
+
+.mediaRIght{
+position: absolute;
+left: 30%;
+width: 70%;
+margin-left: 0;
+
+}
+.thingFact{
+// color: #A82222;
+position: relative;
+// margin: auto;
+margin: .75em;
+// margin-left: 3.5em;
+// display: inline-blo  ck;
+width: 15em;
+height: 1.8em;
+line-height: .9em;
+// max-height: 200px;
+// float: left;
+
+
+}
+
+.innerFact{
+position: absolute;
+color: #FAFAFA;
+left: 22%;
+background-color: #A82222;
+padding: auto;
+padding-top: .5em;
+padding-bottom: .5em;
+// padding: .5em;
+// font-family: 'archivoBold';
+  width: 78%;
+  height: 1.8em;
+
+  font-weight: 300;
+text-align: center;
+text-transform: uppercase;
+
+}
+
+
+.innerIcon{
+
+  height: 1.8em;
+  width: 22%;
+// width: 2.5em;
+  position: absolute;
+  color: #fcfcfc;
+  left:0;
+  background-color: rgba(168, 34, 34, .6);
+// border: solid 1px #FF4274;
+
+
+
+}
+
+.iconImg {
+  width: 90%;
+  height: 90%;
+  // height: 3em;
+  // position:absolute;
+  margin: .1em;
+}
+
+#mobileIcon{
+  colopr: #FAFAFA;
+}
+.thingPic{
+
+// padding-bottom: 2em;
+// padding-top: 2em;
+// margin: 1em;
+width: 30em;
+}
+
+#mlk{
+
+// width: 80%;
+}
+.context{
+// border: solid 1px #FF4274;
+width: 90%;
+margin:auto;
+
+}
+
+.innerContext{
+// border: solid 1px #0F3B72;
+width: 90%;
+margin:auto;
+line-height: .9em;
+font-size: 60%;
+// display: inline;
+// font-family: 'Droid Sans', sans-serif;
+font-weight: 200;
+// font-family: 'Titillium Web', sans-serif;
+font-family: 'archivo';
+text-align: center;
+// font-family: 'Khula', sans-serif;
+
+
+}
+
+#mlkLink{
+
+display: inline-block;
+height: 20%;
+}
+
+.regLink{
+font-size: 100%;
+
+}
+
+
+a{
+font-size: 40%;
+font-family: oswald;
+font-weight: 900;
+color: #444;
+text-decoration: none;
+/*letter-spacing: -.05em;*/
+margin-bottom: 0%;
+margin-top: 0%;
+/*margin-bottom: 9%;*/
+display: inline;
+
+
+
+}
+
+a:hover{
+color: #A82222;
+
+}
+
+a:link { color: #444; }
+/*Unvisited link.*/
+a:visited { color: #444; }
+
+a:focus { color: #444; }
+/*The user clicks on animsition-link link.*/
+a:active {  color: #444;}
+
+
+ul {
+list-style-type: none;
+position: relative;
+
+// padding: 0;
+overflow: hidden;
+// background-color: #444;
+width: 95%;
+
+margin: 0;
+// margin-bottom: .5em;
+}
+
+li {
+float: left;
+width: 16%;
+margin:auto;
+margin: .15em;
+// border: solid .01em #444;
+
+
+}
+
+li a {
+display: block;
+// text-align: center;
+line-height: .9em;
+font-weight: 400;
+text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+color: #A82222;
+/*background-color: #111;*/
+}
+
+
+
+p{
+
+// font-family: 'Khula', sans-serif;
+// font-family: 'archivo', Fallback, sans-serif;
+font-family: 'archivo';
+// font-weight: 400;
+
+}
+
+
+.profilePic{
+
+width: 100%;
+}
+.tweed{
+background-image: url("media/tweed.png")
+}
+
+.hoffman{
+background-image: url("media/hoffman.png")
+
+}
+
+.plaid{
+background-image: url("media/plaid.jpg")
+
+}
+
+.seigaiha{
+background-image: url("media/seigaiha.png")
+
+}
+.slabtexted .slabtext
+{
+display: -moz-inline-box;
+display: inline-block;
+white-space: nowrap;
+
+}
+.slabtextinactive .slabtext
+{
+display: inline;
+white-space: normal;
+font-size: 1em !important;
+letter-spacing: inherit !important;
+word-spacing: inherit !important;
+*letter-spacing: normal !important;
+*word-spacing: normal !important;
+}
+.slabtextdone .slabtext
+{
+display: block;
+line-height: 1em;
+}

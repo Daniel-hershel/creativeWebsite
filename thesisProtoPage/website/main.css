@@ -1,0 +1,200 @@
+
+body {
+  background-color:#FCFCFC;
+font-size: 2.9vw;
+  font-family: 'Oswald';
+color:#444;
+height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.col{
+// border-top: 5px solid #6B0062;
+// border-bottom: .5em solid #6B0062;
+// border: .5em solid #E31F1B;
+margin-bottom: 5vh;
+
+
+}
+
+.row{
+// border: .5em solid #6B0062;
+
+}
+#app{
+   width : 95%;
+    max-width : 80em;
+  margin-right: auto;
+  margin-left: auto;
+  // position: relative;
+ // border: solid 1px #84FFA6;
+}
+.animsition{
+
+margin: auto;
+// border: 2px solid #0F3B72;
+
+}
+
+.thing{
+  // border: solid 5px #444;
+  width: 100%;
+  margin-bottom: 10%;
+  position: relative;
+  height: 30vh;
+   display:inline-block;
+
+}
+
+.innerThing{
+  // border: solid 1px #E31F1B;
+  width: 85%;
+  margin: auto;
+  height: 50%;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+
+}
+
+
+.innerThingTop{
+  // border: solid 1px #E31F1B;
+  width: 85%;
+  margin: auto;
+  height: 22vh;
+
+}
+
+.innerThingBottom{
+  // border: solid 1px #E31F1B;
+  width: 85%;
+  margin: auto;
+  height: 8vh;
+
+}
+
+.title{
+
+  // width: 90%;
+  margin: auto;
+  position:relative;
+}
+
+#title{
+  height: 30%;
+  margin-top: 5vh;
+  text-align: center;
+  // border: solid 2px #0F3B72;
+}
+
+#titleRow{
+
+  margin-bottom: 0;
+}
+
+.innerTitle{
+// margin: auto;
+width: 80%;
+margin: auto;
+margin-top: 2vh;
+line-height: 1em;
+font-weight: 700;
+text-transform: uppercase;
+// text-align: center;
+  // border: solid 1px #13716E;
+}
+
+.subtitle{
+  // border: solid 1px #00CC00;
+  width: 80%;
+// margin: auto;
+  line-height: .9em;
+text-transform: uppercase;
+margin-top: 2vh;
+
+opacity: .7;
+
+}
+
+.context{
+   // border: solid 1px #1F75C7;
+opacity: .7;
+width: 80%;
+// margin: auto;
+// position: relative;
+line-height: 1em;
+font-family: 'Titillium Web', sans-serif;
+font-weight: 300;
+
+}
+
+.mediaLeft{
+   // border: solid .1em #444;
+   // border: solid 5px #FFE47D;
+position: absolute;
+left: 2.5vh;
+width: 30%;
+
+}
+
+
+.mediaRight{
+   // border: solid 5px #6300FF;
+position: absolute;
+left: 40%;
+// float:right;
+width: 60%;
+// margin-left: 1vh;
+
+}
+
+.imageHolder{
+width: 100%;
+	left: 0;
+margin-left: 0;
+margin-top:0;
+   // border: solid 5px #FFE47D;
+
+
+}
+
+
+h1{
+  margin: .1em;
+}
+
+.toBlast{
+
+  // position:relative;
+  width: 50%;
+  margin: auto;
+  // text-align: center;
+}
+
+
+#proto{
+
+  opacity: .7;
+}
+
+.absolute{
+  // position: absolute;
+  font-weight: 700;
+  line-height: 1em;
+}
+img{
+width: 100%;
+
+// margin: auto;
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homepage: DSB Website</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Khula:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900" rel="stylesheet">
+
+<link rel="stylesheet" href="libraries/animsition/css/animsition.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="libraries/animsition/js/animsition.js"></script>
+<!-- <script src="app.js"></script> -->
+<link rel="stylesheet/less" type="text/css" href="styles.less" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+<div class="animsition">
+<div id = "app">
+
+<div class = "logo">
+<div  id = "logoAbout" >
+
+<!-- <div id = "aboutMe" class = "vtxt"> -->
+<a id = "about" href="sub_about.html">ABOUT</a>
+<!-- </div> -->
+</div>
+<div id = "who" class = "innerTitle">
+<h1> DANIEL SILBER-BAKER </h1>
+</div>
+<div id = "what" class = "innerTitle">
+
+<h2> CREATIVE CODER &amp; </h2>
+
+<h2> FRONT END DEVELOPER </h2>
+</div>
+
+</div>
+<!-- </div> -->
+<div class = "menu">
+<div class = "innerMenu">
+
+<ul>
+  <!-- <li><a class="active" href="#home">HOME</a></li> -->
+  <li id = "interAct"><a href="sub_interact.html">INTER-ACTIVITIES</a></li>
+  
+ <!-- <div id = "container"> -->
+ <!-- <div id = "test">We</div></div> -->
+  <li id = "thesis"><a  id = "myThesis" href="http://www.danielsilber-baker.com/thesis" target = "_blank">WORDS BIRTH WORLDS
+</a></li>
+
+   <li  id = "creativeCode"><a id = "cc" href="sub_text.html"> digital text toolkit   </a></li>
+  <li id = "poetry"><a  id = "poem" href="sub_poetry.html">
+abcdefghijklmnopqrstuvwxyz</a></li>
+  <!-- <li id = "aboutMe"><a id = "about" href="#about">ABOUT</a></li> -->
+</ul>
+</div>
+</div>
+</div> <!-- end app -->
+</div> <!-- end animsition -->
+<script>
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-down-sm',
+    outClass: 'fade-out-down-sm',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script src="src/lining.js"></script>
+<script src="libraries/p5.js" type="text/javascript"></script>
+ <script src="libraries/p5.dom.js" type="text/javascript"></script> 
+<script src="libraries/p5.gif.min.js" type="text/javascript"></script>
+<!-- <script src="sketch.js" type="text/javascript"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
+<script src="libraries/jquery/jquery.blast.min.js"></script>
+<script src="libraries/jquery/jquery.lettering.js"></script>
+<script src="libraries/textualizer.min.js" type="text/javascript"></script>
+<script src="libraries/oridomi.min.js"></script>
+<script src="libraries/jquery/jquery.fittext.js"></script>
+<script src="libraries/plugins.js"></script>
+<!-- <script src="libraries/registeredAnimations.js"></script> -->
+
+
+
+<script>
+  jQuery("li").fitText(1.2, { minFontSize: '25vh', maxFontSize: '45vh' });
+  jQuery(".logo").fitText(1.2, { minFontSize: '28.9vh', maxFontSize: '56vh ' });
+  jQuery("#cc").fitText(1.2, { minFontSize: '25vh', maxFontSize: '45vh ' });
+ jQuery("#poem").fitText(1.2, { minFontSize: '20vh', maxFontSize: '35vh ' });
+  // $("#who").fitText(.5, { minFontSize: '20vh', maxFontSize: '40vh' });
+  // $("#what").fitText(.5, { minFontSize: '18vh', maxFontSize: '30vh' });
+  // $("#logoAbout").fitText(.5, { minFontSize: '16vh', maxFontSize: '20vh' });
+</script>
+<script>
+
+/* ABOUT FOR LOGO */
+
+$eleMent = $('#logoAbout')
+
+  $eleMent.velocity({rotateZ: '90deg'}, {duration: 800, delay:0,})
+</script>
+
+
+<script>
+/* THESIS */
+
+// a) try making my own animaaion with velocity and blast
+
+$("#myThesis").blast({   
+  delimiter: "word",
+      search: false, // Perform a search *instead* of delimiting
+    tag: "div", // Set the wrapping element type (e.g. "div")
+    customClass: "thesis", // Add a custom class to wrappers
+    generateIndexID: true,// Add #customClass-i to wrappers
+    generateValueClass: true, // Add .blast-word-val to wrappers
+    // stripHTMLTags: false // Strip HTML before blasting
+    returnGenerated: true // Return generated elements to stack
+    });
+
+
+$element = $('.thesis')
+
+$words = $('.blast-word-words')
+$birth = $('.blast-word-birth')
+$worlds = $('.blast-word-worlds')
+
+
+  $words.velocity({translateY: '+=2em'}, {duration: 1800, delay:500,})
+  $words.velocity({translateY: '-=2em'}, {duration: 1800, delay:500,})
+  $birth.velocity({color: '#1F75C7'}, {duration: 1800, delay:500,})
+  $worlds.velocity({translateY: '-=2em'}, {duration: 1800, delay:500,})
+  $worlds.velocity({translateY: '+=2em'}, {duration: 1800, delay:500,})
+
+
+console.log($element)
+// $element.velocity({
+//     properties: {letterSpacing: '+=.01em' },
+//     options: { duration: 500, delay: 500 }
+//     // options: { duration: 500, loop:true }
+// });
+
+
+// b) try textualizing again
+// var list = ['words birth worlds', 'worlds birth words', 'third blurb'];  // list of blurbs
+
+// var txt = $('#thesis');  // The container in which to render the list
+
+// var options = {
+//   duration: 1000,          // Time (ms) each blurb will remain on screen
+//   rearrangeDuration: 1000, // Time (ms) a character takes to reach its position
+//   effect: 'random',        // Animation effect the characters use to appear
+//   centered: true           // Centers the text relative to its container
+// }
+
+// txt.textualizer(list, options); // textualize it!
+// txt.textualizer('start'); // start
+</script>
+
+
+<script>
+/* POETRY */
+
+
+$eleMent = $('#logoAbout')
+
+  $eleMent.velocity({rotateZ: '90deg'}, {duration: 800, delay:0,})
+
+whoRunIt()
+function whoRunIt (){
+$("#poem").blast({   
+  delimiter: "character",
+      search: false, // Perform a search *instead* of delimiting
+    tag: "div", // Set the wrapping element type (e.g. "div")
+    customClass: "poem", // Add a custom class to wrappers
+    generateIndexID: true,// Add #customClass-i to wrappers
+    generateValueClass: true, // Add .blast-word-val to wrappers
+    // stripHTMLTags: false // Strip HTML before blasting
+    returnGenerated: true // Return generated elements to stack
+    });
+
+
+// poetry
+    var $poetry= $('.poem')
+    
+var $a = $(".blast-character-a");
+var $b = $(".blast-character-b");
+var $c = $(".blast-character-c");
+var $d = $(".blast-character-d");
+var $e = $(".blast-character-e");
+var $f = $(".blast-character-f");
+var $g = $(".blast-character-g");
+var $h = $(".blast-character-h");
+var $i = $(".blast-character-i");
+var $j = $(".blast-character-j");
+var $k = $(".blast-character-k");
+var $l = $(".blast-character-l");
+var $m = $(".blast-character-m");
+var $n = $(".blast-character-n");
+var $o = $(".blast-character-o");
+var $p = $(".blast-character-p");
+var $q = $(".blast-character-q");
+var $r = $(".blast-character-r");
+var $s = $(".blast-character-s");
+var $t = $(".blast-character-t");
+var $u = $(".blast-character-u");
+var $v = $(".blast-character-v");
+var $w = $(".blast-character-w");
+var $x = $(".blast-character-x");
+var $y = $(".blast-character-y");
+var $z = $(".blast-character-z");
+
+
+var alphabet = [$a,$b,$c,$d,$f,$g,$h,$i,$j,$k,$l,$m,$n, $q,$s,$u,$v,$w, $x,$z]
+var $poem = [$p, $o, $e, $t, $r, $y]
+
+$p.addClass('poetryLetter')
+$o.addClass('poetryLetter')
+$e.addClass('poetryLetter')
+$t.addClass('poetryLetter')
+$r.addClass('poetryLetter')
+$y.addClass('poetryLetter')
+
+
+$.Velocity.RegisterUI("poem", {
+    defaultDuration: 3000,
+    calls: [ 
+      [ { opacity: 1 }, 0.25, { duration: 500, delay:100, stagger: 100, easing: "easeInExpo" } ],
+            // [{ textShadowY: 15,}, 1, { easing: "easeInExpo" }],
+    ]
+});
+
+$el = $(".poetryLetter").toArray();
+var $elSet =  $el.slice(0,7)
+
+
+// function start() {
+
+
+// var animeTime = 180;
+var animationSequence = []
+for (var i = 0; i < $poem.length; i++){
+animateAlphabet =  { e: $poem[i], p: 'poem', options: {
+
+    duration: 200,
+      delay: 100,
+      drag: 300,
+      easing: "linear",
+      
+}},
+
+   animationSequence.push(animateAlphabet)
+
+ }
+
+
+ 
+
+
+for (var i = 0; i < alphabet.length; i++){
+rest =  { e: alphabet[i],  p: {fontSize: '-=.5em', margin:'-=.01em'}, options: {
+
+    duration: 100,
+      delay: 100,
+      drag: 300,
+      easing: "linear"
+//       complete:  function(){
+
+
+//       }
+}},
+
+   animationSequence.push(rest)
+
+}
+
+animateAlphabetP = { e: $p, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=1.1em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+  animateAlphabetO = { e: $o, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=.6em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+  animateAlphabetE = { e: $e, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'+=4em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+  animateAlphabetT = { e: $t, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=2.1em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+  animateAlphabetR = { e: $r, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=.3em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+  animateAlphabetY = { e: $y, p: {fontSize: '+=.1em',translateY: '+=1em',translateX:'-=3em'}, o:{ duration: 500,delay: 0, easing: "linear",}
+},
+
+
+
+ animationSequence.push(animateAlphabetP)
+   animationSequence.push(animateAlphabetO)
+   animationSequence.push(animateAlphabetE)
+   animationSequence.push(animateAlphabetT)
+   animationSequence.push(animateAlphabetR)
+   animationSequence.push(animateAlphabetY)
+
+
+
+// turn on here
+ $.Velocity.RunSequence(animationSequence);
+  
+  reRunIt()
+  
+}
+
+function reRunIt(){
+  
+  console.log('and then')
+  // alphabet.velocity("reverse");
+}
+
+
+
+
+</script>
+<script>
+/* ABOUT */
+
+      var $aboutMe= $('#aboutMe')
+  var $about = $('#about')
+  // $about.velocity()
+  // $about.velocity("about")
+</script>
+
+<script>
+/* DIGITAL TEXT TOOLKIT */
+
+
+
+// spread operator in javascript
+// [...'𝟘𝟙𝟚𝟛'] returns an array of [0,1,2,3]
+// so its [...'whatever you want turned into an array']
+
+// write a script to return an alphabatized string of characters from a string of words
+  
+
+// create an array of letters in alphabetical order that appear in the given string
+var myList = [...'digital text toolkit']
+var $goods = myList.sort()
+  
+  //append them to the appropriate container
+  var $elementWord = $('#cc')
+// $elementWord.append(myList)
+// $elementWord.append($goods)
+
+// console.log(myList.sort())
+
+// have blast js create elements from each of the letters
+$("#cc").blast({ 
+    delimiter: "character",// Set the delimiter type (see left)
+    search: false, 
+    tag: "div", // Set the wrapping element type (e.g. "div")
+    customClass: "byWord", // Add a custom class to wrappers
+    generateIndexID: true,// Add #customClass-i to wrappers
+    generateValueClass: true, 
+    returnGenerated: true 
+});
+
+  var $element = $('.byWord').toArray()
+  var $a = $('#byWord-0')
+  var $d = $('#byWord-1')
+  var $toolkit = $('#byWord-2')
+
+// create an array of d i g i t a l
+  
+var wordOne =  $element.slice(0,7)
+var wordTwo = $element.slice(7, 11)
+var wordThree = $element.slice(11, 20)
+  console.log(wordThree)
+ // $el.velocity({rotateZ: -45, translateY: '-=.5em', margin: '+=.1em', color: "#239B6F"}, {delay:500, duration: 500})
+var $t = $('.blast-character-t')
+
+
+$.Velocity.RegisterUI("digitaltext", {
+    defaultDuration: 3000,
+    calls: [ 
+            // [ { fontSize: '-=45%', color: '#70171A' , letterSpacing: '-= .1em'}, 1, {easing: "easeInSine"} ],
+            [ { translateX: '+=5em'  }, 1, {easing: "easeInSine"} ],
+            // [ { width:'/=2',  }, 1, {easing: "easeInSine"} ],
+
+    ]
+});
+
+$.Velocity.RegisterUI("hoops", {
+    defaultDuration: 3000,
+    calls: [ 
+            // [ { margin: 15 }, 1, {easing: "easeInSine"} ],
+            [ {padding: [-1,3] }, 1, {easing: "easeInCirc"} ],
+            // [ { borderBottomWidth: 25 }, 1 ],
+            // [ { skewZ: -20 }, 1, {easing: "easeInCirc"} ],
+    ]
+});
+
+
+     var toolkit_sequence = [
+{e:$element, p: {translateX: '+=1em', rotateZ: function(i, total) {
+        return i * 10;
+    }, rotateY: 95, skewX: -45}, o:{ duration: 1500, delay: 100, loop: true}},
+
+]
+$.Velocity.RunSequence(toolkit_sequence);
+
+
+var sequenceTwo = [
+  
+  // digital
+  {e:wordOne, p:{ translateY:'-=1em', translateX: function(i, total) {
+        return (i+2) * 25;
+    }, skewX: 0, rotateY: 0, textShadowX:'-=5em', textShadowY: '-=5em', rotateZ:0, borderRadius: 0, borderColor: '#FCFCFC', borderWidth: '-=5em', boxShadowX:0, boxShadowY: 0, boxShadowBlur: 0 }, o:{ sequenceQueue: false, duration: 3000, delay: 500}},
+  // text
+  {e:wordTwo, p:{ translateY:'+=.5em',  translateX: function(i, total) {
+        return (i+2) * 25;
+    }, skewX: 0, rotateY: 0, textShadowX:'-=5em', textShadowY: '-=5em', rotateZ:0,  borderRadius: 0, borderColor: '#FCFCFC', borderWidth: '-=5em', boxShadowX:0, boxShadowY: 0, boxShadowBlur: 0  }, o:{  duration: 3000, delay: 2000}},
+  
+  // toolkit
+    {e:wordThree, p:{ translateY:'+=1.5em', translateX: function(i, total) {
+        return (i+2) * 25;
+    }, skewX: 0, rotateY: 0, textShadowX:'-=5em', textShadowY: '-=5em', rotateZ:0,  borderRadius: 0, borderColor: '#FCFCFC', borderWidth: '-=5em', boxShadowX:0, boxShadowY: 0, boxShadowBlur: 0   }, o:{ duration: 3000, delay: 2500}},
+  
+   // {e:wordOne, p: 'hoops', o:{ sequenceQueue: false, duration: 1500, delay: 100}},
+]
+
+$.Velocity.RunSequence(sequenceTwo);
+
+// wordOne.velocity("reverse")
+</script>
+
+<script>
+
+/* INTERACTIVITIES*/
+
+$("#interAct").blast({   
+  delimiter: "character",
+  generateValueClass: true,
+  customClass: "demo",
+  // generateIndexID: true 
+    });
+//blast text
+//by character
+//give all a common class
+//capture class with jquery $('.class')
+//velocity js on click run random mutation
+$.Velocity.RegisterUI("callout.twirl", {
+    defaultDuration: 3000,
+    calls: [ 
+      [ { rotateZ: 1080 }, 0.50 ],
+      [ { scaleX: 0.5 }, 0.25, { easing: "spring" } ],
+      [ { scaleX: 1 }, 0.25, { easing: "spring" } ]
+    ]
+});
+// console.log()
+// $("#blastMe").blast({
+// delemiter: "character",
+// // tag: "div",
+// generateValueClass: true,
+// customClass: "byCharacter",
+// generateIndexID: true
+// });
+$mutate = $('.demo').toArray()
+// console.log($mutate)
+// var links = $('.demo')
+$(".demo").hover(function() {
+  //mouse on the item
+  // console.log("hello")
+  $element = this;
+   console.log($element)
+  // $element.velocity({ translateY: "-=100px" }, { loop: 2 });
+  // console.log(this)
+    var sequence = [
+{e:$element, p: { color: '#70171A', translateY: '-40px', translateX: '-70px', fontSize: '-=65%', left: '-=12px', }, o:{ duration: 1500}},
+]
+$.Velocity.RunSequence(sequence);
+}, function() {
+  //mouse off the item
+      var sequence = [
+{e:$element, p: { color: '#444', translateY: '80px', translateX: '50px', fontSize: '+=65%', left: '-=12px', }, o:{ duration: 1500}},
+]
+$.Velocity.RunSequence(sequence);
+});
+</script>
+<!-- <script>
+// $('#overature').on('click', '.item', function() {
+$('#ogStory').click(function() {
+  var $content = $('#ogPoem')
+  // $content.velocity("transition.flipXIn")
+  // velocity('slideUp', {duration: 200});
+  if ($content.is(':visible')) {
+    // $content.velocity('slideUp', {duration: 200});
+    $content.velocity("transition.flipXOut")
+  }
+  else {
+    $content.velocity("transition.flipXIn")
+    // $content.velocity('slideDown', {duration: 200});
+  }
+});
+</script> -->
+</body>
+</html>
